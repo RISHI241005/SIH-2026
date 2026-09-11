@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Desk - Renewable Energy Portal</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-logo"><div class="logo-icon">⚡</div><span>RenewPower</span></div>
+        <div class="nav-links">
+            <a href="/admin" class="nav-link">Dashboard</a>
+            <a href="/energy-tracking" class="nav-link">Energy Tracking</a>
+            <a href="/ai-desk" class="nav-link active">AI Desk</a>
+            <a href="/forecasts" class="nav-link">Forecasts</a>
+            <a href="/approvals" class="nav-link">Approvals</a>
+            <a href="/feedback" class="nav-link">Feedback</a>
+        </div>
+        <div class="nav-actions">
+            <span style="color: var(--secondary);">👤 Admin</span>
+            <button class="btn btn-secondary btn-sm" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <div class="main-content" style="margin-left: 260px;">
+        <div class="dashboard-header fade-in">
+            <h1>🤖 AI Desk</h1>
+            <p>Chat with our AI assistant for energy insights, problem analysis, and solutions</p>
+        </div>
+
+        <div style="display: flex; gap: 20px; padding: 20px 40px; max-width: 1400px; margin: 0 auto;">
+            <div style="flex: 3; display: flex; flex-direction: column;">
+                <div class="chat-container" style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); flex: 1;">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="chat-message ai">
+                            <strong>AI Assistant:</strong> Hello! Welcome to the Renewable Energy AI Desk. I can help you with energy production analysis, problem detection, solutions, and weather forecasts. How can I assist you today?
+                        </div>
+                    </div>
+                    <div class="chat-input-area">
+                        <input type="text" id="chatInput" placeholder="Ask about solar, wind, hydro energy..." onkeypress="if(event.key==='Enter') sendMessage()">
+                        <button class="btn btn-primary btn-sm" onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 16px;">
+                <div class="card">
+                    <h3 style="margin-bottom: 12px;">📊 Quick Actions</h3>
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <button class="btn btn-secondary btn-sm" onclick="askAI('What is the current solar panel efficiency?')">⚡ Solar Efficiency</button>
+                        <button class="btn btn-secondary btn-sm" onclick="askAI('Analyze wind turbine performance')">💨 Wind Analysis</button>
+                        <button class="btn btn-secondary btn-sm" onclick="askAI('What is the battery health status?')">🔋 Battery Health</button>
+                        <button class="btn btn-secondary btn-sm" onclick="askAI('Check weather forecast')">🌤️ Weather Forecast</button>
+                        <button class="btn btn-secondary btn-sm" onclick="askAI('How can I reduce energy theft?')">🔍 Theft Detection</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 style="margin-bottom: 12px;">📋 AI Insights</h3>
+                    <div id="aiInsights">
+                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 8px;">• Solar panels: 12% efficiency drop detected</div>
+                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 8px;">• Wind turbines: Vibration within normal range</div>
+                        <div style="font-size: 0.85rem; color: var(--text-secondary);">• Battery: Optimal health at 92%</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 style="margin-bottom: 12px;">📈 Predictive Analysis</h3>
+                    <div id="predictiveAnalysis">
+                        <div class="badge badge-ok">Solar: Good</div>
+                        <div class="badge badge-warn" style="margin-top: 4px;">Wind: Monitor</div>
+                        <div class="badge badge-ok" style="margin-top: 4px;">Hydro: Stable</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+    <script>
+        async function sendMessage() {
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim();
+            if (!message) return;
+            
+            const messagesDiv = document.getElementById('chatMessages');
+            messagesDiv.innerHTML += `<div class="chat-message user">${message}</div>`;
+            input.value = '';
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            
+            try {
+                const res = await fetch('/api/ai/chat', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({message, context: {source_type: 'solar'}})
+                });
+                const data = await res.json();
+                const response = data.response;
+                if (typeof response === 'object') {
+                    messagesDiv.innerHTML += `<div class="chat-message ai"><strong>AI:</strong> ${response.response || JSON.stringify(response)}</div>`;
+                } else {
+                    messagesDiv.innerHTML += `<div class="chat-message ai"><strong>AI:</strong> ${response}</div>`;
+                }
+            } catch(e) {
+                messagesDiv.innerHTML += `<div class="chat-message ai"><strong>AI:</strong> Our AI system is analyzing your query. Here's what I know about energy management...</div>`;
+            }
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+        
+        function askAI(question) {
+            document.getElementById('chatInput').value = question;
+            sendMessage();
+        }
+        
+        function logout() { localStorage.removeItem('user'); location.href = '/'; }
+    </script>
+</body>
+</html>

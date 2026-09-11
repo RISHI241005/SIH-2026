@@ -1,0 +1,931 @@
+kind,tech,capacityKW,hours,tempC,loadPct,efficiencyPct,src
+storage,Solid-State pilot,99.5,4.7,43.2,43.4,99,synth
+production,Wind-Geared 2MW,278.4,13.6,15.1,42.4,83.47,synth
+storage,Li-ion NMC,396.4,4.6,44.9,51.1,87.62,synth
+distribution,HVDC link,267.5,4.9,20.8,26.5,97.22,synth
+production,Hydro-Francis,280.5,9.3,36.1,26.1,86.78,synth
+distribution,HV-220kV line,371.8,17.1,17.8,56.9,91.79,synth
+production,Hydro-Kaplan,486.6,6.2,33.8,93.6,90.76,synth
+distribution,HV-132kV line,414.3,15.7,27.1,66.6,93.73,synth
+distribution,HV-220kV line,110.4,10.0,37.1,81.5,92.7,synth
+production,Wind-DirectDrive 4MW,248.4,1.7,25.7,99.1,94.9,synth
+production,Solar-TOPCon 580W,492.8,18.2,35.6,24.5,88.28,synth
+production,Wind-Geared 2MW,149.8,2.7,40.3,93.2,85.41,synth
+storage,Flow-Vanadium,1.4,16.1,19.4,86.3,79.28,synth
+production,Wind-DirectDrive 4MW,333.6,9.9,40.9,98.0,90.55,synth
+production,Wind-Geared 2MW,120.4,5.0,40.1,32.9,85.56,synth
+production,Hydro-Francis,251.3,8.2,44.4,77.0,84.41,synth
+distribution,LV-11kV line,245.3,6.1,40.2,28.2,82.36,synth
+storage,Solid-State pilot,227.4,4.6,32.8,25.7,93.84,synth
+production,Hydro-Francis,71.5,2.7,41.3,60.8,83.07,synth
+production,Wind-DirectDrive 4MW,475.7,8.3,28.8,59.1,90.6,synth
+distribution,LV-11kV line,97.8,16.7,27.8,40.1,85.99,synth
+distribution,HVDC link,158.2,4.7,23.4,49.5,94.43,synth
+distribution,LV-11kV line,492.5,15.6,34.7,51.5,79.73,synth
+storage,Lead-Acid,485.2,17.6,40.3,72.7,72.41,synth
+production,Solar-TOPCon 580W,337.9,3.8,25.8,82.5,93.96,synth
+distribution,HV-132kV line,264.3,17.3,43.8,29.6,94.05,synth
+distribution,HV-220kV line,136.2,4.1,44.1,24.8,92.95,synth
+storage,Li-ion LFP,440.0,6.7,25.8,71.8,91.66,synth
+distribution,HV-132kV line,24.5,15.2,19.5,52.4,96.39,synth
+production,Solar-PERC 450W,3.3,1.6,38.4,23.1,82.03,synth
+distribution,HVDC link,409.0,18.8,34.0,86.0,94.37,synth
+production,Wind-DirectDrive 4MW,275.8,19.8,26.6,77.2,92.32,synth
+production,Hydro-Francis,241.3,11.3,38.1,45.8,83.44,synth
+distribution,LV-11kV line,470.0,8.3,34.8,64.5,83.78,synth
+production,Solar-PERC 450W,348.5,5.0,33.4,99.5,81.51,synth
+storage,Lead-Acid,96.5,10.5,38.5,37.1,75.46,synth
+storage,Li-ion NMC,469.4,7.5,19.4,41.2,89.68,synth
+storage,Li-ion NMC,348.3,2.8,32.6,25.4,88.37,synth
+storage,Li-ion NMC,482.5,18.3,32.5,54.6,87.18,synth
+storage,Li-ion LFP,343.8,16.3,31.3,57.8,91.56,synth
+storage,Li-ion NMC,193.6,17.5,27.9,80.1,90.98,synth
+storage,Lead-Acid,256.1,9.4,32.0,66.1,74.07,synth
+storage,Solid-State pilot,453.3,8.1,23.0,99.8,95.39,synth
+production,Solar-PERC 450W,349.6,3.7,16.4,66.2,83.2,synth
+storage,Solid-State pilot,473.9,17.8,34.9,81.8,95.42,synth
+distribution,HV-132kV line,237.1,2.9,34.0,38.5,94.66,synth
+distribution,HV-132kV line,469.4,18.7,18.2,99.8,93.56,synth
+production,Hydro-Francis,179.8,9.9,27.2,26.2,84.59,synth
+production,Hydro-Kaplan,182.0,5.4,41.4,76.2,87.81,synth
+distribution,HV-220kV line,90.3,11.6,21.4,48.1,93.33,synth
+storage,Li-ion LFP,371.2,11.2,30.7,49.3,89.75,synth
+production,Wind-DirectDrive 4MW,273.0,9.5,26.5,52.8,93.59,synth
+storage,Li-ion LFP,185.5,3.3,29.9,42.7,92.88,synth
+distribution,HVDC link,165.6,10.1,37.2,38.3,92.84,synth
+production,Wind-DirectDrive 4MW,14.3,19.1,22.5,97.3,92.48,synth
+production,Wind-Geared 2MW,365.3,13.8,27.8,68.1,85.69,synth
+distribution,HV-220kV line,153.1,5.5,37.9,29.3,94.4,synth
+storage,Li-ion NMC,474.5,10.2,27.3,35.0,90.7,synth
+production,Wind-DirectDrive 4MW,85.8,19.5,43.9,59.3,90.38,synth
+storage,Lead-Acid,469.8,17.3,17.9,96.4,72.41,synth
+storage,Li-ion LFP,68.7,8.0,43.9,34.7,91.31,synth
+storage,Solid-State pilot,461.8,3.2,35.9,97.0,90.68,synth
+distribution,HVDC link,8.6,6.5,28.3,53.0,96.83,synth
+production,Hydro-Kaplan,329.4,19.8,29.5,74.5,89.0,synth
+distribution,HV-132kV line,397.3,1.6,36.1,54.9,91.47,synth
+production,Wind-DirectDrive 4MW,460.2,16.4,40.0,93.5,93.78,synth
+production,Hydro-Francis,297.3,18.2,31.3,74.5,86.56,synth
+production,Wind-DirectDrive 4MW,256.8,1.5,24.2,28.8,94.13,synth
+storage,Flow-Vanadium,65.3,14.0,30.8,81.9,78.67,synth
+distribution,HV-220kV line,385.4,9.2,26.4,51.8,93.72,synth
+production,Wind-Geared 2MW,105.3,12.8,26.8,54.1,86.64,synth
+distribution,HVDC link,302.5,10.6,30.5,98.4,96.97,synth
+production,Solar-TOPCon 580W,227.1,3.6,17.0,25.1,92.94,synth
+storage,Lead-Acid,148.2,18.3,22.0,92.1,73.41,synth
+production,Solar-PERC 450W,426.4,8.7,22.6,88.5,82.83,synth
+production,Wind-Geared 2MW,155.1,11.0,38.7,99.4,84.68,synth
+storage,Li-ion LFP,220.4,9.3,40.1,45.4,92.34,synth
+storage,Solid-State pilot,149.5,6.8,34.6,48.7,94.01,synth
+production,Hydro-Francis,450.4,10.5,29.3,75.3,84.1,synth
+distribution,HV-132kV line,444.0,11.8,39.8,86.8,94.39,synth
+production,Hydro-Francis,320.7,11.6,19.8,37.6,81.69,synth
+production,Solar-PERC 450W,481.9,19.0,27.1,70.0,85.24,synth
+storage,Li-ion LFP,22.2,1.4,36.9,38.3,90.24,synth
+production,Wind-Geared 2MW,196.8,9.7,43.9,61.2,84.98,synth
+distribution,LV-11kV line,380.1,15.3,32.6,53.7,82.52,synth
+storage,Lead-Acid,96.0,12.4,40.2,95.6,70.19,synth
+production,Solar-PERC 450W,148.0,7.4,23.2,57.4,83.04,synth
+production,Hydro-Kaplan,185.4,12.5,42.0,32.7,87.85,synth
+production,Solar-PERC 450W,190.7,8.7,16.2,66.8,84.37,synth
+distribution,LV-11kV line,68.4,15.3,21.4,64.7,85.08,synth
+production,Wind-Geared 2MW,473.8,8.6,34.7,60.6,85.23,synth
+production,Solar-PERC 450W,11.2,2.0,40.5,69.5,81.33,synth
+distribution,LV-11kV line,436.4,10.8,29.7,28.8,83.09,synth
+storage,Li-ion LFP,30.3,15.0,39.7,58.2,90.93,synth
+production,Solar-TOPCon 580W,153.9,2.8,26.5,20.8,90.29,synth
+production,Solar-PERC 450W,177.1,3.2,22.6,95.3,81.84,synth
+storage,Solid-State pilot,350.1,13.5,35.2,56.3,92.55,synth
+production,Wind-DirectDrive 4MW,150.5,1.1,24.6,52.9,93.59,synth
+distribution,LV-11kV line,119.5,19.7,23.9,55.2,83.1,synth
+production,Hydro-Francis,274.1,4.3,43.4,64.3,84.37,synth
+distribution,HV-220kV line,284.1,19.2,41.2,35.9,94.25,synth
+production,Solar-PERC 450W,19.1,8.0,44.0,28.2,83.84,synth
+distribution,HV-220kV line,389.0,13.0,43.1,49.9,95.74,synth
+storage,Li-ion LFP,186.2,18.3,16.7,69.7,88.66,synth
+production,Wind-DirectDrive 4MW,89.0,17.6,16.3,89.5,92.88,synth
+storage,Li-ion NMC,52.7,14.8,17.0,40.6,89.59,synth
+distribution,HV-220kV line,339.1,17.2,26.4,78.4,96.73,synth
+production,Solar-PERC 450W,87.7,10.0,24.9,42.4,83.41,synth
+production,Hydro-Kaplan,219.6,10.4,30.9,74.2,91.15,synth
+distribution,HV-220kV line,219.0,12.7,42.1,71.8,93.85,synth
+distribution,LV-11kV line,162.3,6.3,28.5,58.9,80.65,synth
+distribution,HV-132kV line,49.7,12.9,30.7,38.6,93.32,synth
+production,Solar-PERC 450W,281.9,11.0,17.6,33.1,83.65,synth
+production,Solar-TOPCon 580W,115.9,17.3,43.2,54.0,92.75,synth
+storage,Li-ion NMC,310.3,18.1,38.8,56.2,86.91,synth
+distribution,HVDC link,7.6,12.9,39.0,58.0,96.8,synth
+distribution,HVDC link,385.4,10.7,22.0,71.0,96.9,synth
+storage,Li-ion NMC,345.5,16.0,30.2,88.9,88.25,synth
+production,Wind-Geared 2MW,24.5,6.3,19.8,53.4,85.69,synth
+distribution,HVDC link,361.2,3.3,43.9,86.9,96.01,synth
+storage,Flow-Vanadium,71.7,18.9,24.6,78.3,79.16,synth
+distribution,LV-11kV line,36.6,17.9,17.5,75.1,82.52,synth
+storage,Flow-Vanadium,141.4,10.5,18.2,76.3,80.81,synth
+production,Hydro-Kaplan,62.9,19.9,43.0,79.2,88.3,synth
+storage,Lead-Acid,275.5,11.2,23.8,56.7,76.33,synth
+storage,Flow-Vanadium,382.8,6.5,23.4,72.1,79.51,synth
+production,Wind-Geared 2MW,312.3,3.2,25.5,99.3,86.51,synth
+storage,Li-ion NMC,268.2,16.8,33.1,26.7,88.47,synth
+storage,Flow-Vanadium,15.4,6.7,42.3,34.8,76.08,synth
+production,Wind-DirectDrive 4MW,351.5,17.7,34.4,76.9,92.91,synth
+storage,Solid-State pilot,427.8,7.4,21.8,68.3,95.77,synth
+storage,Solid-State pilot,436.4,13.2,44.1,33.5,96.62,synth
+production,Wind-DirectDrive 4MW,303.0,5.6,31.8,40.3,91.5,synth
+distribution,HV-220kV line,276.3,17.4,25.7,73.8,93.52,synth
+distribution,LV-11kV line,146.5,15.3,17.1,86.9,82.0,synth
+production,Solar-TOPCon 580W,98.1,8.1,40.1,42.2,94.33,synth
+distribution,LV-11kV line,22.5,10.7,43.5,96.6,84.52,synth
+distribution,LV-11kV line,431.9,9.9,15.9,82.1,82.21,synth
+production,Solar-PERC 450W,261.4,17.8,19.7,36.7,83.02,synth
+production,Solar-TOPCon 580W,484.0,9.6,33.1,22.6,90.79,synth
+production,Wind-DirectDrive 4MW,431.6,3.7,17.2,70.8,90.46,synth
+distribution,HV-220kV line,297.4,14.3,17.6,37.2,92.89,synth
+production,Wind-Geared 2MW,233.8,19.1,23.2,49.7,88.52,synth
+distribution,HV-132kV line,21.1,19.3,18.8,80.8,94.36,synth
+distribution,HV-220kV line,202.2,13.5,36.1,92.9,94.32,synth
+storage,Lead-Acid,126.5,8.7,43.8,92.6,74.43,synth
+storage,Lead-Acid,450.7,2.5,21.0,41.2,70.69,synth
+storage,Solid-State pilot,292.1,18.0,38.3,53.8,91.79,synth
+production,Solar-PERC 450W,311.7,7.7,19.2,67.6,79.96,synth
+production,Solar-PERC 450W,290.7,1.6,30.2,52.0,83.94,synth
+storage,Li-ion LFP,6.3,14.5,23.5,49.8,94.39,synth
+storage,Solid-State pilot,87.8,1.1,31.3,29.6,93.73,synth
+distribution,HVDC link,82.8,8.0,41.3,40.3,95.58,synth
+distribution,HVDC link,180.3,13.4,33.7,90.0,96.9,synth
+distribution,LV-11kV line,62.8,1.0,19.5,64.6,84.56,synth
+storage,Solid-State pilot,349.6,6.6,28.9,73.3,92.93,synth
+production,Wind-Geared 2MW,464.0,2.9,32.8,75.7,87.66,synth
+distribution,LV-11kV line,44.7,11.5,18.2,31.3,82.26,synth
+distribution,LV-11kV line,427.3,11.3,37.1,79.6,82.05,synth
+storage,Lead-Acid,210.3,4.0,38.1,42.2,72.25,synth
+production,Solar-PERC 450W,86.2,14.9,20.6,52.9,82.73,synth
+storage,Lead-Acid,335.1,7.3,42.8,47.2,74.04,synth
+distribution,LV-11kV line,162.5,10.5,22.8,50.6,82.76,synth
+distribution,HV-220kV line,270.8,1.6,24.3,96.5,95.84,synth
+distribution,LV-11kV line,79.7,1.1,42.1,45.6,82.61,synth
+production,Solar-PERC 450W,91.0,2.2,33.6,41.0,85.74,synth
+production,Wind-DirectDrive 4MW,410.5,9.3,34.3,32.5,91.9,synth
+storage,Solid-State pilot,458.6,10.8,32.7,60.6,92.32,synth
+storage,Lead-Acid,380.1,11.7,32.6,31.6,72.33,synth
+distribution,LV-11kV line,486.2,14.5,39.8,72.1,82.78,synth
+storage,Lead-Acid,38.4,12.0,18.3,20.9,77.41,synth
+distribution,HV-220kV line,224.3,8.6,20.2,62.1,98.16,synth
+distribution,HV-132kV line,23.8,2.7,25.7,43.2,95.35,synth
+distribution,HV-220kV line,350.3,6.0,20.3,32.6,94.77,synth
+storage,Solid-State pilot,126.8,4.1,44.3,52.2,92.58,synth
+production,Hydro-Francis,61.2,18.0,21.0,97.5,85.83,synth
+production,Hydro-Kaplan,71.6,16.2,43.4,47.0,86.76,synth
+storage,Flow-Vanadium,271.5,6.4,35.6,24.9,75.49,synth
+production,Hydro-Francis,131.7,10.9,34.0,73.9,85.12,synth
+storage,Li-ion NMC,257.5,17.3,34.5,33.7,89.77,synth
+storage,Li-ion LFP,185.6,10.2,23.8,99.0,90.27,synth
+distribution,LV-11kV line,459.4,11.7,43.8,49.7,82.27,synth
+production,Wind-DirectDrive 4MW,165.0,16.6,16.1,98.1,91.36,synth
+production,Solar-TOPCon 580W,29.3,3.2,30.4,51.1,89.85,synth
+storage,Solid-State pilot,311.7,3.0,41.2,61.2,91.9,synth
+distribution,HV-132kV line,50.0,8.4,23.6,66.3,92.07,synth
+production,Hydro-Francis,82.1,14.2,30.0,94.0,83.22,synth
+production,Solar-TOPCon 580W,208.0,13.9,38.5,72.9,89.59,synth
+production,Wind-Geared 2MW,166.2,1.5,18.2,22.4,87.08,synth
+distribution,HVDC link,176.7,9.4,27.7,71.6,94.88,synth
+distribution,HV-220kV line,19.0,16.5,34.7,63.8,97.13,synth
+storage,Li-ion NMC,56.5,6.8,16.6,24.0,87.66,synth
+distribution,HV-132kV line,130.6,17.6,23.1,58.3,95.75,synth
+distribution,HV-220kV line,281.7,2.0,42.3,70.8,96.12,synth
+storage,Lead-Acid,273.2,10.8,16.2,41.8,72.42,synth
+production,Solar-PERC 450W,38.2,13.8,29.7,55.8,82.1,synth
+storage,Li-ion LFP,96.2,7.7,35.3,70.2,89.09,synth
+storage,Solid-State pilot,464.9,4.9,36.8,53.9,93.58,synth
+production,Wind-DirectDrive 4MW,79.8,5.4,34.7,96.6,92.22,synth
+storage,Li-ion NMC,4.2,9.9,36.3,76.4,89.5,synth
+distribution,HV-132kV line,334.8,14.4,44.0,85.5,93.06,synth
+distribution,HV-220kV line,264.5,10.0,40.2,32.7,95.78,synth
+storage,Solid-State pilot,74.1,12.4,31.7,35.8,94.88,synth
+production,Solar-TOPCon 580W,147.1,15.6,38.2,51.7,89.25,synth
+distribution,HV-220kV line,177.7,17.1,19.9,63.4,95.69,synth
+storage,Lead-Acid,373.3,4.1,28.3,61.0,74.03,synth
+distribution,HVDC link,131.2,1.8,17.4,30.4,97.22,synth
+storage,Lead-Acid,432.7,11.7,31.1,59.1,73.33,synth
+storage,Solid-State pilot,443.2,9.3,31.3,57.1,94.83,synth
+production,Wind-DirectDrive 4MW,476.3,8.7,32.3,71.5,91.92,synth
+storage,Lead-Acid,185.5,11.3,39.1,61.9,74.52,synth
+storage,Lead-Acid,283.4,10.4,29.2,31.9,73.51,synth
+storage,Flow-Vanadium,271.5,8.0,40.1,95.5,77.34,synth
+distribution,HV-220kV line,160.2,6.1,21.2,75.7,92.37,synth
+distribution,LV-11kV line,19.8,5.1,36.9,43.2,84.12,synth
+storage,Li-ion LFP,15.1,12.0,21.8,27.9,91.58,synth
+storage,Flow-Vanadium,480.7,8.1,43.1,63.5,77.7,synth
+distribution,LV-11kV line,316.5,18.4,22.8,39.2,83.31,synth
+distribution,HV-132kV line,433.4,9.9,22.4,54.7,92.41,synth
+distribution,HVDC link,184.8,9.1,31.4,48.9,94.58,synth
+distribution,HVDC link,278.9,19.1,34.2,29.6,97.15,synth
+distribution,HVDC link,254.0,15.9,31.7,36.5,95.51,synth
+distribution,HV-220kV line,481.8,13.2,28.2,64.1,98.25,synth
+production,Hydro-Francis,60.8,18.7,19.0,66.5,83.35,synth
+distribution,HV-220kV line,370.6,8.5,25.9,80.1,94.69,synth
+storage,Li-ion LFP,239.5,16.8,32.1,54.8,89.07,synth
+distribution,LV-11kV line,14.3,8.6,40.6,65.6,80.19,synth
+distribution,HV-220kV line,204.2,17.3,24.6,71.5,97.34,synth
+production,Hydro-Francis,12.2,8.6,18.2,56.8,83.24,synth
+distribution,HV-220kV line,409.1,12.1,20.9,41.4,95.26,synth
+storage,Flow-Vanadium,70.4,11.7,29.1,77.3,79.24,synth
+storage,Li-ion NMC,163.2,19.3,30.3,34.7,89.22,synth
+distribution,HV-132kV line,178.6,5.8,27.3,53.9,92.94,synth
+storage,Flow-Vanadium,122.2,19.0,41.3,50.7,77.87,synth
+storage,Li-ion NMC,21.0,16.3,28.0,41.2,90.66,synth
+production,Hydro-Francis,441.8,19.7,37.8,31.2,84.5,synth
+storage,Flow-Vanadium,397.9,4.6,38.7,80.5,77.06,synth
+storage,Lead-Acid,86.3,4.9,35.9,23.6,74.44,synth
+storage,Li-ion LFP,169.6,19.4,37.3,74.2,90.98,synth
+production,Wind-Geared 2MW,449.6,11.4,19.8,76.8,82.55,synth
+production,Hydro-Francis,62.0,1.6,15.4,82.0,84.21,synth
+storage,Li-ion NMC,124.5,6.1,19.1,39.4,88.42,synth
+production,Hydro-Kaplan,161.4,15.4,33.7,46.5,87.97,synth
+storage,Lead-Acid,152.0,8.4,16.2,62.8,73.15,synth
+distribution,LV-11kV line,176.6,18.0,23.7,84.8,82.62,synth
+distribution,LV-11kV line,372.9,9.3,32.7,31.7,84.59,synth
+storage,Li-ion LFP,348.0,5.1,40.6,23.3,92.16,synth
+storage,Li-ion NMC,378.3,13.9,16.1,84.0,87.48,synth
+distribution,LV-11kV line,443.7,8.0,23.6,67.8,80.98,synth
+production,Wind-DirectDrive 4MW,294.5,10.8,30.3,27.2,92.46,synth
+production,Hydro-Kaplan,354.7,9.9,19.9,84.0,88.67,synth
+production,Hydro-Kaplan,414.6,13.3,21.4,44.9,90.5,synth
+distribution,HV-220kV line,340.4,2.7,41.6,47.4,94.05,synth
+production,Solar-TOPCon 580W,323.0,4.4,32.0,81.1,89.83,synth
+production,Solar-PERC 450W,276.3,9.2,36.8,49.8,83.09,synth
+production,Wind-DirectDrive 4MW,419.5,12.7,35.7,35.6,93.31,synth
+production,Solar-PERC 450W,44.9,5.7,15.6,54.3,80.33,synth
+distribution,HV-132kV line,302.7,6.7,41.2,38.6,96.15,synth
+production,Wind-Geared 2MW,15.0,1.7,35.1,86.4,84.82,synth
+distribution,LV-11kV line,163.2,14.8,39.5,92.9,84.29,synth
+distribution,LV-11kV line,228.3,1.5,20.6,36.4,80.85,synth
+distribution,HV-220kV line,151.7,10.2,24.3,26.6,96.23,synth
+production,Solar-TOPCon 580W,67.6,17.0,36.9,28.8,89.29,synth
+distribution,HV-132kV line,432.0,13.5,32.0,32.0,93.42,synth
+production,Hydro-Kaplan,162.4,3.1,15.5,82.6,87.58,synth
+production,Hydro-Francis,437.3,12.9,44.1,70.3,83.39,synth
+production,Hydro-Francis,280.3,16.9,37.3,63.6,87.51,synth
+distribution,HVDC link,328.7,19.5,20.2,55.7,96.78,synth
+production,Wind-Geared 2MW,406.9,15.8,33.9,95.0,84.8,synth
+distribution,HV-132kV line,7.1,1.1,25.9,52.0,93.13,synth
+distribution,HV-220kV line,316.3,13.6,15.5,77.1,96.91,synth
+production,Hydro-Francis,381.9,8.3,36.1,83.9,84.5,synth
+production,Hydro-Francis,154.4,8.2,31.5,55.3,87.19,synth
+production,Wind-DirectDrive 4MW,349.4,3.4,20.4,70.6,93.68,synth
+distribution,LV-11kV line,441.8,7.2,29.7,49.9,83.55,synth
+distribution,HV-220kV line,273.0,14.0,19.8,35.3,95.69,synth
+distribution,HV-132kV line,38.3,13.8,32.1,45.8,93.6,synth
+distribution,HV-132kV line,227.0,3.9,23.0,61.8,95.09,synth
+production,Hydro-Kaplan,193.3,13.2,26.0,74.8,87.81,synth
+storage,Flow-Vanadium,395.8,1.0,16.0,75.2,76.07,synth
+production,Wind-Geared 2MW,260.0,13.6,38.3,99.2,83.31,synth
+distribution,LV-11kV line,5.4,9.5,21.8,64.3,81.97,synth
+distribution,LV-11kV line,434.2,4.9,16.0,88.9,80.34,synth
+production,Hydro-Francis,437.5,8.5,16.9,23.0,83.19,synth
+storage,Solid-State pilot,160.7,9.9,40.8,81.6,93.39,synth
+production,Wind-DirectDrive 4MW,472.3,3.6,25.0,54.5,92.72,synth
+distribution,HV-132kV line,11.4,6.4,37.2,96.4,94.02,synth
+storage,Li-ion NMC,208.6,9.1,40.7,64.1,89.96,synth
+storage,Lead-Acid,154.2,18.9,38.3,92.9,72.52,synth
+production,Wind-Geared 2MW,180.1,16.1,22.3,92.3,83.41,synth
+storage,Li-ion NMC,448.9,4.1,20.5,66.6,87.71,synth
+storage,Flow-Vanadium,107.0,15.7,21.0,38.1,77.09,synth
+production,Hydro-Kaplan,99.9,11.0,37.6,47.6,89.44,synth
+storage,Solid-State pilot,202.1,10.6,39.9,56.5,91.98,synth
+production,Hydro-Francis,125.1,12.7,22.4,57.5,85.5,synth
+storage,Li-ion NMC,437.5,7.8,40.8,92.0,88.62,synth
+distribution,HV-220kV line,368.5,4.3,17.5,29.5,96.73,synth
+distribution,HVDC link,440.3,3.1,18.2,66.8,97.05,synth
+distribution,HVDC link,230.7,12.0,23.9,29.6,96.91,synth
+storage,Li-ion NMC,433.3,9.0,19.9,76.8,89.2,synth
+storage,Lead-Acid,166.9,18.3,41.9,72.2,73.69,synth
+distribution,HV-220kV line,22.3,9.5,39.2,84.1,95.76,synth
+storage,Li-ion NMC,250.9,5.5,18.1,51.3,86.74,synth
+production,Solar-PERC 450W,149.6,19.1,32.0,23.3,80.61,synth
+storage,Solid-State pilot,228.8,3.5,20.4,99.1,92.42,synth
+distribution,HV-220kV line,239.3,5.0,23.0,40.7,96.05,synth
+distribution,LV-11kV line,218.7,5.9,41.2,92.8,81.04,synth
+production,Hydro-Francis,425.7,12.7,19.2,96.8,86.34,synth
+storage,Li-ion NMC,66.4,4.2,19.5,44.4,87.76,synth
+storage,Li-ion LFP,25.9,15.2,31.3,98.4,92.86,synth
+production,Solar-TOPCon 580W,64.9,3.8,44.4,51.7,91.71,synth
+storage,Solid-State pilot,53.6,12.1,21.3,21.3,94.77,synth
+distribution,LV-11kV line,375.0,12.9,17.2,88.6,82.18,synth
+distribution,HV-220kV line,156.6,15.4,20.0,59.9,94.67,synth
+storage,Flow-Vanadium,487.3,15.5,26.5,43.6,76.43,synth
+storage,Lead-Acid,111.7,15.5,26.9,72.3,72.81,synth
+production,Wind-DirectDrive 4MW,331.2,9.4,37.1,50.2,93.03,synth
+distribution,LV-11kV line,425.7,10.5,33.5,89.0,80.02,synth
+storage,Lead-Acid,42.4,10.0,35.3,47.4,74.94,synth
+production,Hydro-Francis,156.8,4.1,44.8,51.1,84.03,synth
+production,Wind-Geared 2MW,408.8,17.0,41.0,82.8,86.71,synth
+distribution,HVDC link,169.4,7.9,41.1,56.7,96.37,synth
+production,Wind-DirectDrive 4MW,150.6,18.5,22.6,24.9,92.71,synth
+storage,Li-ion NMC,398.3,13.9,22.2,76.1,92.6,synth
+distribution,LV-11kV line,13.9,6.3,25.7,83.3,82.17,synth
+distribution,LV-11kV line,24.3,9.2,44.8,59.1,85.18,synth
+storage,Lead-Acid,235.8,1.8,42.5,73.6,70.86,synth
+production,Wind-DirectDrive 4MW,162.0,12.3,31.8,75.8,92.68,synth
+storage,Flow-Vanadium,413.4,14.7,29.3,85.0,78.3,synth
+production,Hydro-Francis,124.9,9.5,19.3,66.5,86.36,synth
+distribution,HVDC link,186.6,14.5,42.9,59.2,95.52,synth
+distribution,HV-132kV line,358.3,2.6,15.8,95.7,93.96,synth
+distribution,HV-220kV line,368.5,9.7,36.4,52.9,95.12,synth
+distribution,LV-11kV line,163.3,15.0,15.5,82.6,86.27,synth
+storage,Flow-Vanadium,408.5,9.2,41.6,22.3,79.12,synth
+production,Hydro-Francis,123.3,1.4,23.5,99.4,85.3,synth
+storage,Solid-State pilot,465.7,17.9,17.6,59.7,93.01,synth
+storage,Solid-State pilot,50.7,9.0,25.1,80.8,94.84,synth
+storage,Flow-Vanadium,230.5,9.8,29.2,51.6,78.62,synth
+distribution,HV-220kV line,270.2,11.7,27.2,75.0,95.27,synth
+distribution,HV-132kV line,330.5,8.4,25.9,73.8,95.99,synth
+production,Hydro-Francis,383.3,5.9,31.2,93.6,84.48,synth
+production,Wind-DirectDrive 4MW,233.4,16.3,25.6,66.0,91.58,synth
+distribution,HVDC link,173.0,11.7,19.4,64.2,95.09,synth
+distribution,HVDC link,437.6,5.8,19.8,54.3,96.8,synth
+production,Wind-Geared 2MW,349.7,1.9,30.1,49.2,89.01,synth
+distribution,LV-11kV line,400.3,1.8,24.2,24.0,83.97,synth
+distribution,HVDC link,235.3,4.1,36.7,35.6,95.38,synth
+distribution,HV-220kV line,124.6,10.4,24.8,55.2,93.68,synth
+distribution,HV-220kV line,135.0,12.7,23.1,40.7,96.01,synth
+distribution,LV-11kV line,311.1,10.2,41.2,79.9,84.74,synth
+distribution,LV-11kV line,339.1,14.9,38.1,37.7,84.13,synth
+production,Wind-DirectDrive 4MW,87.5,10.8,32.8,72.3,91.52,synth
+production,Wind-Geared 2MW,12.9,18.4,27.0,45.5,86.44,synth
+storage,Li-ion NMC,161.6,9.2,33.5,73.5,89.2,synth
+storage,Flow-Vanadium,218.9,9.4,15.1,61.4,77.54,synth
+storage,Li-ion LFP,75.7,10.4,20.8,79.9,90.34,synth
+storage,Li-ion NMC,142.6,1.6,40.7,38.5,89.24,synth
+storage,Flow-Vanadium,193.6,11.6,20.2,85.0,74.56,synth
+storage,Li-ion NMC,386.2,1.9,21.2,36.3,87.78,synth
+production,Wind-DirectDrive 4MW,415.2,7.1,40.8,65.8,92.28,synth
+distribution,LV-11kV line,354.9,3.8,26.9,66.6,82.05,synth
+production,Wind-DirectDrive 4MW,179.7,15.9,38.4,43.5,90.83,synth
+distribution,LV-11kV line,269.4,3.3,19.9,64.0,84.35,synth
+distribution,LV-11kV line,495.5,11.0,27.8,84.2,85.32,synth
+distribution,HV-132kV line,107.5,14.8,23.5,76.0,92.14,synth
+storage,Solid-State pilot,229.9,3.0,27.5,53.1,95.34,synth
+storage,Solid-State pilot,425.6,8.8,37.5,26.6,94.43,synth
+production,Solar-PERC 450W,23.6,4.6,40.7,65.9,81.69,synth
+storage,Flow-Vanadium,4.8,6.7,41.1,21.5,78.47,synth
+distribution,HV-132kV line,32.1,10.9,22.6,38.2,93.39,synth
+storage,Solid-State pilot,44.4,14.9,23.1,40.0,94.02,synth
+distribution,HVDC link,425.1,7.8,32.2,53.2,96.91,synth
+distribution,HV-132kV line,258.2,5.1,15.0,36.7,92.87,synth
+distribution,LV-11kV line,168.9,13.1,36.6,33.4,81.02,synth
+production,Solar-TOPCon 580W,56.6,11.0,43.8,90.5,91.55,synth
+production,Wind-DirectDrive 4MW,151.8,5.1,19.0,74.2,93.61,synth
+storage,Solid-State pilot,246.9,14.3,20.9,46.6,92.34,synth
+distribution,HV-220kV line,28.9,10.3,29.4,73.2,94.14,synth
+storage,Solid-State pilot,219.9,6.6,29.6,80.6,95.23,synth
+distribution,HV-220kV line,460.9,14.2,26.2,95.0,95.53,synth
+distribution,HVDC link,317.0,5.6,44.9,91.3,95.81,synth
+production,Solar-PERC 450W,205.0,11.6,40.3,35.1,82.2,synth
+distribution,HV-132kV line,100.2,14.4,24.7,51.3,92.91,synth
+production,Solar-TOPCon 580W,171.8,10.9,41.4,98.1,88.69,synth
+distribution,HV-132kV line,108.4,14.8,21.6,82.5,95.57,synth
+production,Wind-Geared 2MW,45.1,4.6,28.1,28.7,85.66,synth
+storage,Li-ion NMC,28.2,9.0,16.8,60.6,89.0,synth
+distribution,HV-220kV line,243.5,11.7,36.3,56.8,95.51,synth
+production,Hydro-Francis,189.3,4.0,23.8,26.7,84.61,synth
+distribution,HVDC link,439.2,14.8,36.7,95.9,95.66,synth
+storage,Solid-State pilot,414.1,13.0,42.8,48.6,93.24,synth
+production,Solar-PERC 450W,111.4,8.9,41.6,97.3,83.15,synth
+storage,Li-ion NMC,55.4,12.2,36.3,55.3,85.55,synth
+storage,Li-ion LFP,382.8,18.8,41.2,20.2,90.35,synth
+distribution,LV-11kV line,345.9,1.8,19.7,54.9,82.21,synth
+storage,Lead-Acid,249.7,7.7,34.2,21.2,73.01,synth
+distribution,HVDC link,459.6,16.2,16.0,92.8,96.58,synth
+distribution,HV-220kV line,243.7,14.1,43.2,93.8,95.8,synth
+production,Hydro-Kaplan,86.0,12.8,35.7,41.8,87.58,synth
+production,Hydro-Kaplan,447.2,9.5,43.4,96.4,89.51,synth
+production,Wind-Geared 2MW,46.5,3.3,32.2,84.5,87.04,synth
+storage,Li-ion LFP,75.8,6.5,34.5,41.5,87.37,synth
+distribution,LV-11kV line,266.2,15.2,27.3,33.3,85.02,synth
+distribution,LV-11kV line,105.7,2.0,30.9,90.3,82.7,synth
+storage,Li-ion NMC,93.3,17.9,41.1,43.2,87.39,synth
+distribution,LV-11kV line,268.2,7.4,19.2,40.9,84.22,synth
+production,Wind-Geared 2MW,169.8,4.3,24.3,35.7,85.02,synth
+distribution,HV-132kV line,198.5,6.9,42.9,48.6,92.91,synth
+production,Wind-DirectDrive 4MW,484.7,13.0,33.3,52.8,91.13,synth
+production,Wind-Geared 2MW,271.2,5.4,18.2,97.7,85.6,synth
+distribution,LV-11kV line,246.2,6.0,17.1,26.9,82.48,synth
+storage,Li-ion NMC,352.3,6.3,18.1,98.1,85.54,synth
+production,Solar-TOPCon 580W,325.8,2.3,21.1,85.7,88.07,synth
+distribution,HVDC link,34.4,10.4,35.9,84.8,95.51,synth
+storage,Solid-State pilot,120.2,15.0,34.1,81.7,92.84,synth
+distribution,LV-11kV line,115.4,19.8,15.3,63.8,84.39,synth
+production,Hydro-Kaplan,222.5,3.5,30.1,21.2,87.16,synth
+distribution,HV-220kV line,121.3,10.4,42.5,80.5,93.71,synth
+distribution,LV-11kV line,295.3,1.8,41.5,94.3,85.0,synth
+distribution,HV-220kV line,186.1,11.5,32.0,69.3,94.72,synth
+storage,Li-ion NMC,277.6,1.2,40.2,69.8,89.41,synth
+storage,Li-ion NMC,252.4,19.8,41.3,63.4,88.33,synth
+distribution,LV-11kV line,223.8,17.2,29.1,86.6,84.34,synth
+storage,Li-ion NMC,40.8,2.9,30.3,64.9,86.78,synth
+production,Solar-TOPCon 580W,422.4,14.7,23.3,49.2,90.69,synth
+distribution,HVDC link,373.1,4.4,16.6,90.3,97.32,synth
+storage,Flow-Vanadium,130.0,11.4,22.6,37.6,75.36,synth
+production,Wind-Geared 2MW,215.6,15.5,36.1,75.3,85.64,synth
+distribution,LV-11kV line,289.9,11.9,24.9,42.7,83.74,synth
+production,Wind-DirectDrive 4MW,195.7,2.7,29.0,95.4,91.1,synth
+distribution,HVDC link,124.6,4.8,41.3,76.9,95.52,synth
+production,Hydro-Kaplan,250.0,4.9,15.5,65.9,86.79,synth
+distribution,HVDC link,302.2,18.1,25.5,97.3,99,synth
+storage,Solid-State pilot,451.8,5.1,18.8,94.4,94.91,synth
+distribution,HV-220kV line,322.5,7.6,37.2,84.1,96.09,synth
+storage,Li-ion NMC,460.9,8.1,44.5,26.0,89.13,synth
+production,Wind-Geared 2MW,242.2,3.1,37.8,34.8,88.17,synth
+distribution,LV-11kV line,93.5,17.7,42.5,73.9,82.27,synth
+storage,Li-ion NMC,204.1,3.8,26.9,68.6,92.13,synth
+production,Solar-TOPCon 580W,121.4,13.2,25.4,94.6,88.78,synth
+distribution,HV-132kV line,329.3,2.7,25.6,33.1,92.36,synth
+storage,Flow-Vanadium,1.3,1.8,15.6,38.5,77.98,synth
+storage,Flow-Vanadium,186.5,1.2,43.3,91.8,77.03,synth
+production,Wind-DirectDrive 4MW,263.4,10.9,30.7,95.4,95.0,synth
+production,Solar-PERC 450W,132.2,3.6,28.5,84.6,84.67,synth
+production,Hydro-Francis,451.8,2.1,38.2,41.4,85.98,synth
+distribution,HVDC link,213.1,15.8,27.2,68.4,99,synth
+storage,Solid-State pilot,161.1,17.9,17.0,31.1,95.74,synth
+storage,Lead-Acid,114.7,16.7,21.5,61.0,75.18,synth
+distribution,HV-220kV line,335.4,8.3,44.8,63.8,95.28,synth
+storage,Li-ion NMC,400.9,11.4,38.4,48.5,90.1,synth
+production,Solar-TOPCon 580W,317.7,17.8,42.8,29.2,92.27,synth
+distribution,HV-220kV line,302.8,16.6,29.1,43.6,98.45,synth
+storage,Li-ion LFP,346.0,8.9,24.8,87.0,93.83,synth
+storage,Lead-Acid,382.1,16.8,15.9,74.2,76.09,synth
+production,Solar-TOPCon 580W,178.6,1.1,33.9,46.1,92.43,synth
+production,Solar-PERC 450W,498.1,6.2,42.3,75.0,83.84,synth
+storage,Lead-Acid,267.4,4.7,31.7,89.0,76.24,synth
+storage,Li-ion NMC,198.0,9.0,21.0,84.5,88.57,synth
+distribution,LV-11kV line,199.1,18.8,16.1,51.7,82.43,synth
+storage,Lead-Acid,355.5,17.3,34.4,81.8,73.9,synth
+production,Hydro-Francis,9.1,18.6,37.1,25.1,82.64,synth
+production,Hydro-Kaplan,471.8,9.7,30.2,46.8,87.99,synth
+distribution,HV-220kV line,18.8,6.0,40.7,56.3,96.75,synth
+distribution,HVDC link,4.1,4.9,29.5,67.0,97.35,synth
+storage,Li-ion LFP,461.9,8.4,22.2,44.3,91.74,synth
+storage,Solid-State pilot,188.7,18.0,35.4,32.9,95.73,synth
+storage,Li-ion NMC,384.7,4.2,31.1,29.7,88.98,synth
+distribution,HV-220kV line,416.3,8.6,24.1,61.8,94.8,synth
+distribution,HV-220kV line,314.2,7.1,23.0,29.5,93.72,synth
+storage,Li-ion NMC,445.8,17.8,20.5,27.5,87.8,synth
+distribution,HV-220kV line,437.7,13.6,19.1,35.9,95.91,synth
+production,Solar-TOPCon 580W,303.4,10.7,35.0,75.8,93.4,synth
+storage,Flow-Vanadium,190.8,3.1,35.5,24.9,79.87,synth
+production,Hydro-Francis,227.5,6.4,44.9,31.4,84.44,synth
+distribution,HV-220kV line,164.2,12.6,42.9,87.6,94.52,synth
+production,Wind-Geared 2MW,378.1,3.5,23.5,64.7,83.62,synth
+production,Solar-TOPCon 580W,215.5,12.5,31.1,51.0,89.64,synth
+storage,Li-ion LFP,161.6,17.9,22.4,87.2,91.43,synth
+storage,Li-ion LFP,329.8,16.3,39.9,67.3,88.6,synth
+distribution,HVDC link,78.1,18.2,27.9,21.4,95.56,synth
+distribution,HVDC link,133.5,11.2,27.3,22.7,97.33,synth
+storage,Li-ion LFP,53.9,16.7,23.3,66.2,93.14,synth
+production,Wind-DirectDrive 4MW,202.8,15.9,19.9,21.8,92.45,synth
+distribution,HV-220kV line,182.5,18.1,25.7,55.2,94.28,synth
+storage,Lead-Acid,115.4,1.5,29.3,41.5,75.57,synth
+distribution,HVDC link,401.4,10.4,35.3,82.0,95.05,synth
+production,Wind-DirectDrive 4MW,226.9,2.1,21.8,63.9,94.29,synth
+distribution,HVDC link,288.9,4.6,34.3,87.4,97.79,synth
+storage,Flow-Vanadium,34.4,13.5,23.7,21.0,79.24,synth
+distribution,LV-11kV line,120.3,6.3,36.3,36.9,80.77,synth
+storage,Lead-Acid,31.7,5.1,25.5,31.9,74.9,synth
+storage,Li-ion LFP,226.2,19.5,42.1,68.7,89.88,synth
+storage,Lead-Acid,176.5,9.8,25.3,35.3,74.91,synth
+distribution,HVDC link,228.1,10.1,30.9,25.9,96.58,synth
+production,Hydro-Kaplan,76.2,2.8,32.2,44.2,88.17,synth
+distribution,HV-220kV line,302.1,6.4,37.0,46.2,94.91,synth
+production,Wind-DirectDrive 4MW,278.6,9.3,22.4,22.1,93.68,synth
+production,Hydro-Kaplan,185.3,8.9,25.6,45.5,89.68,synth
+distribution,HVDC link,52.8,7.7,33.0,39.3,97.69,synth
+storage,Lead-Acid,174.6,10.0,25.7,52.4,73.87,synth
+distribution,HVDC link,325.3,9.8,19.4,83.3,95.89,synth
+production,Wind-Geared 2MW,58.2,11.9,21.5,41.7,86.73,synth
+production,Hydro-Kaplan,172.2,16.9,35.4,98.0,89.61,synth
+production,Hydro-Francis,93.7,4.3,27.7,47.5,85.22,synth
+production,Solar-TOPCon 580W,485.4,12.2,20.6,37.4,89.53,synth
+storage,Li-ion NMC,492.3,6.4,40.4,48.2,88.25,synth
+storage,Flow-Vanadium,110.2,6.3,22.2,83.1,77.1,synth
+production,Hydro-Kaplan,85.0,8.5,40.8,68.8,90.17,synth
+production,Hydro-Kaplan,443.3,19.7,21.3,30.3,89.41,synth
+storage,Solid-State pilot,472.6,8.9,40.2,87.8,93.13,synth
+storage,Flow-Vanadium,314.1,11.4,41.6,54.9,77.71,synth
+distribution,LV-11kV line,149.9,16.6,27.0,48.4,82.54,synth
+distribution,HVDC link,138.1,13.3,25.6,23.4,95.39,synth
+production,Wind-Geared 2MW,357.3,17.4,29.5,95.5,87.06,synth
+storage,Li-ion LFP,68.3,6.5,42.2,69.1,89.99,synth
+distribution,HV-132kV line,53.2,9.9,26.4,69.0,95.99,synth
+production,Wind-Geared 2MW,223.0,18.3,26.1,85.7,86.48,synth
+storage,Lead-Acid,9.2,6.9,30.3,67.6,73.03,synth
+distribution,HV-132kV line,166.7,1.4,42.1,59.7,93.92,synth
+production,Hydro-Kaplan,142.3,17.8,20.5,21.6,89.93,synth
+production,Hydro-Francis,447.4,15.2,28.1,94.6,87.0,synth
+distribution,LV-11kV line,15.2,6.7,27.1,99.7,83.24,synth
+production,Solar-TOPCon 580W,395.8,17.1,34.5,60.9,89.94,synth
+production,Solar-TOPCon 580W,34.4,4.3,40.4,66.3,92.04,synth
+production,Solar-TOPCon 580W,173.7,8.1,36.9,54.5,90.84,synth
+distribution,HV-132kV line,226.0,1.2,41.1,26.0,93.98,synth
+storage,Li-ion LFP,431.6,11.0,33.1,36.4,91.7,synth
+storage,Solid-State pilot,443.9,12.4,40.4,91.2,94.15,synth
+storage,Li-ion NMC,335.2,16.0,15.1,49.0,86.16,synth
+distribution,HVDC link,176.5,16.7,33.8,41.4,97.35,synth
+distribution,LV-11kV line,285.0,9.0,42.1,79.2,82.94,synth
+storage,Flow-Vanadium,42.2,14.5,41.0,94.4,77.8,synth
+distribution,HV-132kV line,24.7,11.3,19.5,82.6,92.93,synth
+distribution,LV-11kV line,148.6,13.0,24.3,57.5,83.3,synth
+storage,Solid-State pilot,311.5,13.8,33.6,88.1,95.52,synth
+distribution,HVDC link,467.6,4.0,21.5,43.7,96.94,synth
+distribution,HV-220kV line,20.2,11.9,34.0,70.7,93.23,synth
+storage,Li-ion NMC,247.4,8.6,26.4,40.1,89.1,synth
+production,Hydro-Kaplan,11.0,13.0,31.5,41.3,90.63,synth
+production,Hydro-Francis,284.9,3.1,37.8,92.2,82.96,synth
+distribution,HV-220kV line,275.9,4.4,19.1,60.6,96.93,synth
+storage,Lead-Acid,456.3,11.3,32.7,42.5,73.28,synth
+production,Hydro-Kaplan,70.6,3.1,42.4,91.1,89.39,synth
+distribution,HV-132kV line,345.8,9.2,41.0,64.0,92.31,synth
+production,Hydro-Kaplan,154.8,3.9,38.8,28.7,88.9,synth
+storage,Solid-State pilot,253.1,3.2,18.5,31.5,94.53,synth
+storage,Lead-Acid,372.6,13.1,21.5,33.6,72.67,synth
+storage,Li-ion NMC,288.2,8.5,19.8,76.0,87.78,synth
+storage,Li-ion NMC,144.2,2.3,27.1,36.7,90.99,synth
+production,Hydro-Francis,12.6,11.8,37.9,63.2,86.59,synth
+distribution,HV-132kV line,153.1,11.6,27.2,98.9,92.41,synth
+storage,Solid-State pilot,423.4,19.6,19.3,48.1,95.42,synth
+production,Hydro-Kaplan,263.3,2.6,28.5,40.5,91.76,synth
+storage,Li-ion NMC,227.0,16.9,44.6,21.0,90.15,synth
+production,Solar-TOPCon 580W,35.3,3.0,37.6,88.8,89.57,synth
+distribution,LV-11kV line,331.5,12.7,15.1,70.5,82.89,synth
+storage,Flow-Vanadium,352.4,5.6,34.4,46.1,78.84,synth
+distribution,HV-220kV line,26.1,13.1,43.9,39.9,96.83,synth
+storage,Flow-Vanadium,308.5,16.7,39.0,27.1,79.12,synth
+distribution,LV-11kV line,141.1,18.8,32.4,93.8,81.7,synth
+production,Wind-Geared 2MW,466.2,14.3,27.7,37.2,87.72,synth
+storage,Lead-Acid,14.3,1.3,31.6,98.4,74.77,synth
+distribution,LV-11kV line,453.7,9.1,31.4,61.9,86.58,synth
+storage,Li-ion LFP,263.8,5.4,20.3,80.2,90.22,synth
+storage,Li-ion LFP,5.1,13.8,44.4,80.4,85.51,synth
+production,Hydro-Francis,174.7,2.2,23.5,81.2,84.62,synth
+distribution,HVDC link,229.3,10.5,23.7,85.6,95.48,synth
+storage,Solid-State pilot,41.4,13.7,38.5,78.5,93.4,synth
+storage,Lead-Acid,434.9,6.7,18.0,37.4,73.75,synth
+production,Solar-TOPCon 580W,323.8,19.6,26.2,92.3,90.0,synth
+distribution,HV-132kV line,268.5,17.4,29.8,56.7,91.8,synth
+production,Solar-PERC 450W,417.9,7.7,39.9,61.0,82.61,synth
+storage,Flow-Vanadium,74.5,3.8,38.5,89.3,78.1,synth
+production,Hydro-Francis,378.3,4.2,24.5,33.5,83.29,synth
+storage,Solid-State pilot,370.7,3.0,35.7,28.4,95.31,synth
+distribution,HV-132kV line,105.9,17.0,43.4,84.7,91.72,synth
+production,Hydro-Kaplan,302.0,2.6,17.4,63.5,87.55,synth
+storage,Li-ion LFP,363.5,15.0,35.7,22.5,91.44,synth
+storage,Solid-State pilot,142.9,11.0,38.2,51.9,90.91,synth
+production,Wind-Geared 2MW,50.4,9.8,43.1,41.2,85.13,synth
+storage,Lead-Acid,152.9,8.9,30.5,34.7,75.09,synth
+distribution,HV-132kV line,55.3,11.1,39.6,50.5,92.43,synth
+distribution,HVDC link,323.9,18.9,42.9,47.8,97.05,synth
+production,Solar-PERC 450W,415.4,1.8,29.1,42.5,82.34,synth
+production,Hydro-Francis,475.5,7.2,37.7,99.0,84.84,synth
+storage,Flow-Vanadium,497.6,2.1,32.4,63.5,77.28,synth
+production,Wind-Geared 2MW,368.7,14.4,27.9,72.4,86.48,synth
+distribution,LV-11kV line,287.3,7.6,17.5,58.6,81.78,synth
+production,Hydro-Francis,292.2,6.4,18.8,95.7,83.91,synth
+storage,Li-ion NMC,492.3,12.9,25.5,92.3,86.44,synth
+storage,Lead-Acid,51.9,1.0,41.6,93.8,73.07,synth
+storage,Flow-Vanadium,316.4,5.0,33.2,82.5,75.64,synth
+distribution,HV-220kV line,286.0,19.3,34.6,64.7,97.73,synth
+production,Wind-DirectDrive 4MW,53.8,12.7,33.3,82.9,93.6,synth
+distribution,LV-11kV line,318.2,3.6,41.9,76.0,79.22,synth
+storage,Solid-State pilot,493.1,5.4,40.5,67.0,91.76,synth
+production,Wind-DirectDrive 4MW,252.4,19.8,17.3,61.6,91.15,synth
+production,Wind-Geared 2MW,1.2,7.1,27.3,46.8,87.22,synth
+storage,Li-ion LFP,374.2,9.5,18.2,66.1,92.2,synth
+storage,Lead-Acid,439.5,3.6,41.7,32.4,72.82,synth
+distribution,LV-11kV line,499.9,6.8,38.3,69.8,81.69,synth
+distribution,HV-132kV line,163.5,17.1,17.0,61.2,96.17,synth
+distribution,HVDC link,381.9,16.8,33.0,31.0,96.27,synth
+storage,Li-ion NMC,26.6,8.1,40.8,71.4,87.63,synth
+distribution,HVDC link,172.1,6.4,33.6,81.1,94.03,synth
+production,Wind-DirectDrive 4MW,4.1,9.1,33.3,72.1,90.73,synth
+production,Solar-PERC 450W,304.9,18.6,16.3,88.2,80.68,synth
+production,Hydro-Francis,333.8,1.7,36.6,52.8,82.42,synth
+storage,Lead-Acid,479.6,12.6,44.7,45.1,77.39,synth
+storage,Flow-Vanadium,161.4,15.2,34.9,53.7,77.96,synth
+storage,Lead-Acid,72.4,8.2,26.0,98.0,75.31,synth
+distribution,HV-132kV line,211.7,4.9,31.5,82.2,94.84,synth
+distribution,HV-220kV line,165.2,12.7,21.2,40.1,97.38,synth
+production,Wind-DirectDrive 4MW,226.3,13.1,41.7,30.8,92.04,synth
+distribution,HV-220kV line,80.0,3.9,33.5,77.4,95.94,synth
+distribution,HVDC link,15.1,5.8,18.9,29.3,95.02,synth
+storage,Li-ion NMC,384.4,2.5,22.4,80.1,91.0,synth
+distribution,HV-132kV line,442.9,17.5,29.3,33.4,95.47,synth
+production,Wind-DirectDrive 4MW,125.4,11.6,22.7,29.0,91.45,synth
+storage,Lead-Acid,44.1,6.1,25.5,49.7,74.24,synth
+production,Wind-DirectDrive 4MW,255.7,7.6,37.5,34.9,91.81,synth
+distribution,HVDC link,382.7,11.9,42.8,94.6,96.07,synth
+storage,Solid-State pilot,329.8,18.0,22.9,46.5,94.81,synth
+storage,Li-ion LFP,115.5,8.5,19.8,44.8,91.67,synth
+storage,Flow-Vanadium,89.5,6.0,27.9,73.2,75.88,synth
+storage,Lead-Acid,182.8,16.6,39.2,94.1,75.39,synth
+storage,Flow-Vanadium,357.9,4.9,24.4,76.4,76.51,synth
+storage,Li-ion NMC,182.0,11.4,43.1,32.0,89.47,synth
+storage,Li-ion LFP,106.2,9.7,30.6,97.6,92.21,synth
+production,Solar-PERC 450W,45.0,2.6,40.4,70.8,84.65,synth
+production,Wind-DirectDrive 4MW,81.7,14.6,21.8,48.5,91.16,synth
+distribution,HVDC link,327.6,9.9,21.4,82.6,96.79,synth
+distribution,HV-132kV line,402.8,17.2,18.1,77.0,93.91,synth
+distribution,HV-132kV line,251.6,4.2,35.0,20.3,91.68,synth
+distribution,HVDC link,362.6,8.3,30.6,85.4,96.62,synth
+storage,Lead-Acid,232.0,4.4,43.3,89.3,73.45,synth
+distribution,HVDC link,395.3,1.3,36.7,55.1,99,synth
+distribution,HV-132kV line,183.4,1.5,40.6,90.8,90.11,synth
+storage,Li-ion NMC,270.8,13.1,20.5,85.8,88.05,synth
+production,Solar-PERC 450W,245.4,17.1,16.5,63.5,82.74,synth
+production,Hydro-Francis,291.7,15.4,25.9,26.0,87.13,synth
+production,Hydro-Francis,366.5,13.9,41.3,46.0,84.3,synth
+distribution,LV-11kV line,18.6,3.7,27.0,38.7,85.75,synth
+distribution,LV-11kV line,350.3,13.7,34.4,37.6,84.71,synth
+production,Hydro-Francis,125.8,5.6,25.9,25.6,86.87,synth
+production,Solar-PERC 450W,430.9,16.7,16.8,84.3,81.96,synth
+storage,Lead-Acid,471.7,10.3,22.4,58.8,74.66,synth
+production,Wind-Geared 2MW,245.4,8.8,39.7,97.0,87.83,synth
+production,Wind-DirectDrive 4MW,470.5,16.7,20.7,60.3,93.89,synth
+production,Wind-DirectDrive 4MW,214.4,5.7,35.0,59.6,94.01,synth
+distribution,HVDC link,187.6,10.1,33.9,27.2,96.36,synth
+production,Wind-Geared 2MW,183.4,16.2,31.2,83.0,85.01,synth
+storage,Solid-State pilot,50.1,2.0,40.0,96.4,97.89,synth
+production,Wind-DirectDrive 4MW,222.9,15.7,21.9,91.7,90.55,synth
+production,Solar-PERC 450W,175.0,9.7,41.9,93.9,81.82,synth
+storage,Li-ion LFP,345.9,3.3,30.4,47.7,92.99,synth
+distribution,HV-132kV line,265.8,3.6,38.8,25.3,94.37,synth
+storage,Flow-Vanadium,159.9,14.1,15.9,99.1,77.62,synth
+distribution,LV-11kV line,11.0,1.1,22.8,34.5,82.11,synth
+distribution,HV-220kV line,312.7,7.3,40.3,37.7,95.78,synth
+distribution,LV-11kV line,126.8,1.7,39.2,45.1,83.49,synth
+distribution,LV-11kV line,131.4,3.0,43.8,54.4,83.64,synth
+production,Wind-DirectDrive 4MW,208.5,15.9,38.2,97.3,93.02,synth
+storage,Solid-State pilot,343.0,18.0,27.5,48.8,94.59,synth
+storage,Solid-State pilot,489.4,16.4,19.6,99.8,91.12,synth
+production,Solar-TOPCon 580W,133.0,6.6,29.1,64.1,91.79,synth
+distribution,HV-132kV line,409.9,10.9,25.6,63.1,93.24,synth
+distribution,LV-11kV line,106.9,19.8,16.6,66.9,82.07,synth
+distribution,HV-132kV line,428.5,3.0,30.8,49.8,93.13,synth
+storage,Lead-Acid,64.4,19.0,16.3,37.0,72.31,synth
+storage,Li-ion LFP,431.1,5.6,40.7,45.2,91.72,synth
+production,Solar-TOPCon 580W,303.7,18.1,29.1,92.7,90.73,synth
+production,Hydro-Kaplan,331.8,10.2,36.7,28.5,87.96,synth
+distribution,LV-11kV line,412.7,1.9,28.3,79.5,83.3,synth
+storage,Solid-State pilot,420.5,3.4,27.2,89.1,93.42,synth
+distribution,HV-132kV line,436.7,15.8,42.9,45.9,92.8,synth
+storage,Solid-State pilot,345.4,11.2,25.0,82.2,93.26,synth
+storage,Lead-Acid,77.0,10.2,31.3,41.4,73.63,synth
+distribution,LV-11kV line,331.6,18.5,33.1,24.5,81.33,synth
+distribution,HV-220kV line,480.4,17.5,37.8,55.0,95.86,synth
+storage,Flow-Vanadium,252.0,16.8,44.7,86.9,76.55,synth
+storage,Lead-Acid,29.8,10.7,18.7,39.3,73.48,synth
+storage,Li-ion LFP,103.0,15.1,29.7,23.7,93.18,synth
+distribution,LV-11kV line,130.2,13.0,18.3,63.7,83.18,synth
+production,Hydro-Kaplan,46.5,16.1,17.1,56.7,88.17,synth
+storage,Flow-Vanadium,351.7,17.0,15.5,90.4,76.17,synth
+storage,Solid-State pilot,338.1,2.3,21.7,62.7,95.66,synth
+distribution,LV-11kV line,416.1,18.2,25.2,63.1,84.16,synth
+storage,Li-ion NMC,351.9,8.3,41.0,22.2,89.59,synth
+distribution,HV-220kV line,274.0,2.7,15.7,74.5,96.41,synth
+production,Solar-TOPCon 580W,220.5,2.1,39.1,63.3,90.57,synth
+distribution,HV-132kV line,393.5,8.8,31.3,50.9,95.03,synth
+distribution,HV-220kV line,9.1,1.4,41.1,89.7,93.71,synth
+distribution,HVDC link,278.0,5.0,16.9,64.8,97.91,synth
+production,Hydro-Francis,223.0,18.4,34.3,69.2,83.21,synth
+storage,Li-ion NMC,316.5,1.7,28.5,93.3,90.9,synth
+production,Wind-Geared 2MW,231.1,13.1,27.9,73.8,84.76,synth
+production,Solar-TOPCon 580W,50.6,7.6,42.1,87.1,89.73,synth
+distribution,HV-220kV line,313.8,3.3,28.4,63.5,96.42,synth
+storage,Solid-State pilot,80.1,10.5,41.3,21.8,96.27,synth
+storage,Li-ion NMC,16.2,12.8,18.8,51.8,88.43,synth
+production,Hydro-Kaplan,183.6,10.2,33.7,27.2,89.89,synth
+distribution,HV-132kV line,349.4,8.7,22.1,34.6,93.87,synth
+distribution,HVDC link,344.0,9.2,18.7,64.6,94.95,synth
+distribution,HV-132kV line,2.4,2.2,37.0,76.8,91.78,synth
+distribution,HV-132kV line,90.8,9.8,25.8,43.9,93.93,synth
+storage,Li-ion NMC,247.6,19.9,23.7,21.3,91.67,synth
+production,Solar-TOPCon 580W,288.2,13.2,39.9,26.7,87.88,synth
+production,Hydro-Francis,338.5,4.1,29.9,91.4,84.79,synth
+storage,Li-ion NMC,220.6,8.9,16.5,44.2,87.24,synth
+production,Solar-PERC 450W,458.3,19.2,24.8,84.9,79.86,synth
+production,Wind-Geared 2MW,296.7,1.4,20.7,92.5,84.46,synth
+production,Solar-TOPCon 580W,17.5,19.4,15.0,84.6,88.68,synth
+storage,Li-ion NMC,295.5,10.6,23.2,49.1,89.78,synth
+storage,Flow-Vanadium,117.7,1.8,28.0,86.0,79.14,synth
+storage,Li-ion LFP,189.5,17.0,32.8,48.6,89.9,synth
+storage,Lead-Acid,75.3,19.2,21.3,51.4,75.62,synth
+production,Solar-PERC 450W,336.6,9.0,21.8,37.5,82.15,synth
+storage,Li-ion NMC,225.3,4.8,23.4,82.3,90.45,synth
+storage,Li-ion LFP,75.1,7.1,17.0,68.6,90.07,synth
+storage,Li-ion LFP,62.7,4.3,27.6,89.5,94.33,synth
+production,Solar-TOPCon 580W,66.4,9.7,22.4,41.5,90.02,synth
+production,Solar-TOPCon 580W,365.3,16.7,17.3,46.9,89.08,synth
+production,Wind-Geared 2MW,182.5,19.2,30.4,57.6,85.72,synth
+distribution,HV-132kV line,34.1,17.2,39.0,29.3,91.49,synth
+production,Solar-TOPCon 580W,242.5,6.4,39.0,92.7,90.96,synth
+distribution,HV-132kV line,12.8,15.2,20.9,35.7,92.51,synth
+distribution,HVDC link,163.5,12.3,28.5,22.8,98.14,synth
+production,Hydro-Kaplan,123.4,14.0,36.5,37.9,89.01,synth
+distribution,HV-132kV line,73.6,12.1,35.2,38.2,96.97,synth
+storage,Lead-Acid,320.4,3.9,27.3,95.1,72.84,synth
+storage,Lead-Acid,345.3,2.0,34.0,82.2,74.42,synth
+production,Wind-Geared 2MW,464.2,13.5,22.3,80.6,86.9,synth
+production,Wind-DirectDrive 4MW,389.2,11.0,16.3,63.6,92.01,synth
+distribution,LV-11kV line,300.8,4.1,37.7,52.1,88.42,synth
+production,Solar-TOPCon 580W,458.9,8.5,25.5,67.7,89.12,synth
+distribution,HVDC link,215.8,12.1,23.7,51.9,96.0,synth
+storage,Lead-Acid,143.6,10.0,44.3,72.8,70.17,synth
+production,Hydro-Kaplan,150.0,8.3,19.3,73.2,92.31,synth
+production,Wind-Geared 2MW,263.2,4.8,19.1,82.2,88.86,synth
+production,Hydro-Kaplan,450.2,7.9,15.4,83.0,89.32,synth
+distribution,HVDC link,213.6,9.3,22.8,56.5,94.95,synth
+storage,Lead-Acid,47.1,19.9,24.3,91.1,75.11,synth
+storage,Flow-Vanadium,169.0,3.1,18.1,38.1,77.02,synth
+production,Wind-Geared 2MW,321.7,20.0,25.0,20.3,85.37,synth
+production,Hydro-Francis,298.5,15.9,17.9,52.9,83.4,synth
+distribution,HV-132kV line,17.1,5.0,17.1,33.3,92.71,synth
+storage,Lead-Acid,162.2,4.3,40.1,44.8,73.87,synth
+production,Wind-Geared 2MW,229.3,3.1,43.8,72.4,84.26,synth
+distribution,LV-11kV line,472.9,9.9,28.4,88.1,84.05,synth
+production,Solar-TOPCon 580W,48.0,16.1,40.6,73.9,92.18,synth
+distribution,LV-11kV line,220.9,3.0,33.1,86.3,84.17,synth
+distribution,HV-132kV line,240.9,17.5,23.9,34.6,91.82,synth
+production,Hydro-Francis,181.7,13.0,38.0,81.8,84.49,synth
+storage,Flow-Vanadium,327.1,13.3,27.5,35.0,76.43,synth
+production,Hydro-Francis,456.2,15.2,30.4,89.3,84.75,synth
+distribution,HV-220kV line,317.0,17.4,23.3,99.5,97.11,synth
+distribution,LV-11kV line,87.5,17.1,17.5,60.1,83.83,synth
+distribution,HV-132kV line,385.7,2.0,35.9,40.8,93.79,synth
+distribution,HV-132kV line,315.2,2.4,20.3,48.6,92.51,synth
+storage,Flow-Vanadium,160.7,9.8,26.0,94.2,76.4,synth
+production,Wind-DirectDrive 4MW,466.8,17.0,41.4,40.9,93.18,synth
+production,Wind-DirectDrive 4MW,269.5,14.9,39.1,61.7,90.56,synth
+production,Solar-TOPCon 580W,226.0,16.0,24.1,65.3,92.46,synth
+storage,Lead-Acid,355.4,6.9,28.9,45.2,73.38,synth
+production,Wind-DirectDrive 4MW,19.2,13.6,40.4,83.7,92.46,synth
+production,Solar-TOPCon 580W,9.1,5.8,40.1,92.4,88.95,synth
+production,Wind-Geared 2MW,42.5,3.1,21.2,59.6,84.66,synth
+distribution,HV-220kV line,239.3,5.0,35.2,87.1,94.98,synth
+production,Solar-PERC 450W,465.0,7.0,34.3,78.7,81.86,synth
+distribution,LV-11kV line,428.4,12.0,41.7,74.8,81.71,synth
+storage,Li-ion NMC,146.1,11.6,43.8,96.3,88.84,synth
+distribution,HVDC link,338.7,6.7,36.5,27.6,97.26,synth
+storage,Lead-Acid,46.5,7.0,20.9,59.1,72.65,synth
+distribution,LV-11kV line,59.7,15.5,28.6,66.1,80.92,synth
+production,Hydro-Francis,112.2,7.7,31.9,55.0,84.99,synth
+distribution,HV-220kV line,268.0,16.9,38.8,84.2,92.17,synth
+storage,Flow-Vanadium,483.8,3.2,19.4,93.4,75.06,synth
+distribution,LV-11kV line,120.8,6.4,44.1,25.1,81.58,synth
+storage,Flow-Vanadium,340.4,11.5,18.3,53.7,75.2,synth
+distribution,LV-11kV line,396.8,4.0,21.0,37.6,83.81,synth
+distribution,LV-11kV line,38.9,11.0,33.4,61.5,84.04,synth
+production,Hydro-Francis,366.0,19.7,42.7,31.1,84.32,synth
+distribution,HV-220kV line,368.3,10.4,39.0,69.5,96.74,synth
+production,Hydro-Kaplan,446.6,6.9,29.3,43.7,93.1,synth
+storage,Li-ion NMC,483.0,16.1,15.9,20.2,86.13,synth
+production,Hydro-Kaplan,13.5,4.4,19.2,77.3,90.15,synth
+storage,Li-ion NMC,370.5,16.4,28.9,46.3,89.2,synth
+distribution,HV-220kV line,92.3,12.4,23.3,37.9,95.84,synth
+storage,Lead-Acid,430.1,11.6,35.7,92.6,73.22,synth
+distribution,HVDC link,357.3,8.1,28.2,83.9,97.66,synth
+distribution,HV-132kV line,253.5,12.7,18.0,38.0,92.01,synth
+production,Wind-DirectDrive 4MW,385.8,15.6,19.4,22.9,94.36,synth
+storage,Solid-State pilot,20.1,14.2,19.6,84.4,95.96,synth
+production,Wind-Geared 2MW,46.9,9.1,43.0,27.7,85.66,synth
+storage,Li-ion LFP,194.1,15.6,16.7,35.3,90.64,synth
+distribution,LV-11kV line,220.3,11.9,26.9,73.8,84.42,synth
+production,Hydro-Francis,32.6,14.8,19.7,84.1,83.86,synth
+distribution,LV-11kV line,80.9,11.9,18.3,56.5,83.18,synth
+storage,Solid-State pilot,79.0,8.7,34.0,22.3,97.17,synth
+storage,Li-ion LFP,372.3,5.7,20.7,80.2,93.66,synth
+storage,Li-ion LFP,216.8,5.4,41.1,74.8,92.25,synth
+production,Solar-PERC 450W,429.4,17.4,30.6,53.9,83.12,synth
+distribution,HV-132kV line,175.5,1.9,26.3,84.3,92.36,synth
+production,Wind-Geared 2MW,209.7,7.0,16.6,84.7,86.26,synth
+production,Solar-PERC 450W,143.8,11.9,29.6,54.9,81.83,synth
+production,Hydro-Francis,188.9,2.7,33.9,49.5,86.43,synth
+storage,Lead-Acid,45.1,11.5,30.9,76.5,76.51,synth
+storage,Lead-Acid,364.8,18.7,15.2,47.4,73.82,synth
+distribution,HV-132kV line,183.8,8.1,19.5,95.7,93.4,synth
+distribution,LV-11kV line,135.4,11.8,31.2,31.7,85.62,synth
+production,Solar-TOPCon 580W,113.0,8.0,24.4,66.9,91.14,synth
+distribution,HVDC link,95.5,10.4,36.4,66.7,94.99,synth
+distribution,HV-220kV line,46.7,7.6,21.6,80.6,99,synth
+distribution,HV-220kV line,111.0,14.6,16.5,42.7,94.78,synth
+distribution,LV-11kV line,425.2,8.1,26.8,48.7,85.28,synth
+production,Wind-DirectDrive 4MW,438.3,3.2,31.9,74.7,93.28,synth
+storage,Lead-Acid,278.2,3.4,18.0,27.4,73.36,synth
+distribution,HV-220kV line,134.0,5.7,22.0,88.9,93.91,synth
+production,Solar-TOPCon 580W,122.3,11.7,38.3,33.4,90.27,synth
+production,Wind-Geared 2MW,225.0,2.2,20.7,38.7,87.15,synth
+production,Wind-Geared 2MW,455.0,4.9,38.7,34.3,83.75,synth
+distribution,LV-11kV line,380.0,9.7,21.0,58.8,81.21,synth
+production,Solar-PERC 450W,430.1,20.0,29.6,54.0,82.48,synth
+production,Wind-Geared 2MW,320.1,6.3,37.7,78.6,81.97,synth
+distribution,LV-11kV line,107.7,16.1,17.7,91.1,85.32,synth
+storage,Flow-Vanadium,83.4,11.6,34.9,27.8,75.01,synth
+storage,Li-ion NMC,344.0,1.9,40.6,80.8,87.15,synth
+distribution,HV-220kV line,119.6,10.0,21.3,79.1,94.2,synth
+distribution,HV-220kV line,225.2,2.0,25.4,60.3,95.36,synth
+storage,Flow-Vanadium,188.0,6.0,32.9,41.6,78.39,synth
+distribution,HVDC link,370.2,15.6,37.3,62.9,94.17,synth
+storage,Flow-Vanadium,7.0,9.2,19.7,36.8,76.04,synth
+production,Solar-PERC 450W,166.8,8.7,30.4,51.0,83.06,synth
+distribution,LV-11kV line,436.6,18.3,36.9,21.2,84.0,synth
+storage,Lead-Acid,356.9,3.3,35.3,40.2,71.82,synth
+storage,Lead-Acid,89.7,5.4,36.2,43.9,72.97,synth
+storage,Flow-Vanadium,65.9,2.4,29.7,66.7,76.06,synth
+production,Hydro-Francis,498.7,2.2,19.1,84.4,83.71,synth
+distribution,HV-132kV line,71.4,3.6,43.2,50.7,93.87,synth
+distribution,HV-220kV line,399.5,10.3,41.5,37.4,94.36,synth
+storage,Lead-Acid,216.2,2.4,26.3,70.4,74.82,synth
+production,Hydro-Francis,286.1,13.5,43.3,25.2,85.29,synth
+distribution,HVDC link,137.8,9.0,36.4,39.9,94.99,synth
+production,Hydro-Francis,238.4,9.3,18.6,35.3,82.55,synth
+storage,Li-ion NMC,219.0,1.3,27.6,98.2,89.42,synth
+distribution,LV-11kV line,259.1,17.6,41.6,99.7,85.21,synth
+distribution,LV-11kV line,54.5,5.7,43.7,36.3,82.7,synth
+production,Solar-TOPCon 580W,43.4,5.8,27.8,25.8,93.64,synth
+production,Wind-DirectDrive 4MW,37.1,10.7,35.0,23.1,93.54,synth
+storage,Flow-Vanadium,475.6,19.6,28.5,30.8,77.99,synth
+distribution,LV-11kV line,180.3,16.5,41.9,80.3,83.05,synth
+storage,Lead-Acid,377.7,3.4,26.5,71.3,76.08,synth
+distribution,LV-11kV line,436.9,16.3,25.2,86.0,83.0,synth
+distribution,HV-220kV line,42.6,19.9,39.9,96.7,95.56,synth
+production,Solar-TOPCon 580W,46.7,4.1,21.9,54.3,91.25,synth
+production,Hydro-Francis,368.7,12.4,29.1,84.5,84.35,synth
+distribution,HV-132kV line,369.5,11.2,30.9,23.0,94.35,synth
+storage,Flow-Vanadium,474.8,12.0,29.8,74.0,78.44,synth
+distribution,HV-220kV line,213.4,4.6,35.2,75.6,96.82,synth
+distribution,HVDC link,163.9,12.9,45.0,56.7,97.5,synth
+production,Wind-DirectDrive 4MW,152.1,14.3,36.9,44.9,90.24,synth
+distribution,HV-220kV line,278.8,17.0,23.0,72.9,93.71,synth
+distribution,HVDC link,70.6,3.4,30.5,76.5,95.73,synth
+production,Wind-DirectDrive 4MW,341.4,17.1,15.2,46.5,91.22,synth
+distribution,HV-220kV line,350.6,1.3,44.6,34.4,93.82,synth
+production,Hydro-Francis,409.9,3.9,26.3,94.7,86.22,synth
+storage,Lead-Acid,408.3,4.6,23.0,52.2,74.43,synth
+storage,Li-ion NMC,34.4,14.6,20.7,64.6,87.72,synth
+distribution,HV-132kV line,389.5,7.6,38.4,73.0,93.45,synth
+storage,Flow-Vanadium,100.3,1.4,44.9,66.2,77.21,synth
+storage,Li-ion NMC,384.5,18.6,15.9,75.6,87.89,synth
+production,Wind-DirectDrive 4MW,246.8,18.1,15.6,44.9,93.97,synth
+distribution,HV-220kV line,417.7,4.9,32.9,20.7,95.73,synth
+storage,Lead-Acid,312.9,10.7,44.7,50.8,69.78,synth
+storage,Solid-State pilot,470.6,7.4,16.0,91.8,92.13,synth
+storage,Li-ion LFP,170.2,1.3,43.5,42.5,89.37,synth
+distribution,HVDC link,382.9,10.4,42.2,65.1,96.14,synth
+production,Wind-DirectDrive 4MW,405.0,4.5,31.8,35.3,92.08,synth
+storage,Flow-Vanadium,216.3,17.3,34.6,65.8,77.7,synth
+distribution,HVDC link,218.4,5.3,32.7,88.4,97.53,synth
+storage,Li-ion NMC,167.5,6.6,43.4,50.1,88.95,synth
+storage,Flow-Vanadium,288.8,4.6,36.9,59.2,76.27,synth
+distribution,HV-220kV line,391.9,3.3,32.8,69.3,96.7,synth
+production,Solar-PERC 450W,313.2,10.9,37.0,66.5,81.71,synth
+distribution,HV-220kV line,421.4,14.1,39.2,68.3,94.85,synth
+storage,Solid-State pilot,96.5,8.1,22.4,81.8,93.11,synth
+storage,Lead-Acid,440.4,14.7,15.7,22.5,72.84,synth
+production,Hydro-Francis,113.0,7.4,21.4,53.9,82.89,synth
+distribution,HVDC link,434.3,6.0,31.2,40.3,94.95,synth
+distribution,HV-132kV line,307.8,16.0,44.5,35.0,91.81,synth
+storage,Solid-State pilot,62.3,18.9,39.3,26.7,94.61,synth
+production,Wind-Geared 2MW,175.8,9.8,33.6,93.1,84.53,synth
+storage,Li-ion NMC,275.0,9.5,40.1,62.8,90.22,synth
+production,Wind-DirectDrive 4MW,264.2,3.0,32.7,61.6,90.93,synth
+distribution,HV-220kV line,419.4,2.2,18.7,77.6,95.76,synth
+production,Solar-PERC 450W,115.1,17.7,18.4,73.2,82.96,synth
+distribution,LV-11kV line,234.1,17.1,26.9,42.0,82.16,synth
+production,Wind-DirectDrive 4MW,0.49,6.0,30.0,65.0,88.44,upload
+production,Solar-TOPCon 580W,0.53,6.0,30.0,65.0,88.05,upload
+production,Hydro-Kaplan,0.64,6.0,30.0,65.0,88.54,upload
+production,Wind-DirectDrive 4MW,0.46,7.0,30.0,65.0,90.06,upload
+production,Solar-TOPCon 580W,0.49,7.0,30.0,65.0,90.38,upload
+production,Hydro-Kaplan,0.59,7.0,30.0,65.0,89.59,upload
+production,Wind-DirectDrive 4MW,0.43,8.0,30.0,65.0,93.02,upload
+production,Solar-TOPCon 580W,0.46,8.0,30.0,65.0,92.39,upload
+production,Hydro-Kaplan,0.54,8.0,30.0,65.0,92.59,upload
+production,Wind-DirectDrive 4MW,0.62,6.0,30.0,65.0,94.09,upload
+production,Solar-TOPCon 580W,0.5,6.0,30.0,65.0,93.33,upload
+production,Hydro-Kaplan,0.76,6.0,30.0,65.0,94.3,upload
+production,Wind-DirectDrive 4MW,0.42,7.0,30.0,65.0,88.44,upload
+production,Solar-TOPCon 580W,0.5,7.0,30.0,65.0,88.57,upload
+production,Hydro-Kaplan,0.55,7.0,30.0,65.0,88.31,upload
+production,Wind-DirectDrive 4MW,0.4,8.0,30.0,65.0,90.62,upload
+production,Solar-TOPCon 580W,0.47,8.0,30.0,65.0,90.43,upload
+production,Hydro-Kaplan,0.51,8.0,30.0,65.0,90.69,upload
+production,Wind-DirectDrive 4MW,0.58,6.0,30.0,65.0,91.95,upload
+production,Solar-TOPCon 580W,0.51,6.0,30.0,65.0,91.5,upload
+production,Hydro-Kaplan,0.72,6.0,30.0,65.0,92.59,upload
+production,Wind-DirectDrive 4MW,0.53,7.0,30.0,65.0,94.34,upload
+production,Solar-TOPCon 580W,0.47,7.0,30.0,65.0,94.22,upload
+production,Hydro-Kaplan,0.65,7.0,30.0,65.0,94.51,upload
+production,Wind-DirectDrive 4MW,0.37,8.0,30.0,65.0,87.84,upload
+production,Solar-TOPCon 580W,0.48,8.0,30.0,65.0,88.54,upload
+production,Hydro-Kaplan,0.48,8.0,30.0,65.0,88.54,upload
+production,Wind-DirectDrive 4MW,0.54,6.0,30.0,65.0,89.51,upload
+production,Solar-TOPCon 580W,0.52,6.0,30.0,65.0,89.74,upload
+production,Hydro-Kaplan,0.69,6.0,30.0,65.0,89.37,upload

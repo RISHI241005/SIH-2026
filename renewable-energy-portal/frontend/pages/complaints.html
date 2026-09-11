@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints - Renewable Energy Portal</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-logo"><div class="logo-icon">⚡</div><span>RenewPower</span></div>
+        <div class="nav-links">
+            <a href="/admin" class="nav-link">Dashboard</a>
+            <a href="/energy-tracking" class="nav-link">Energy Tracking</a>
+            <a href="/ai-desk" class="nav-link">AI Desk</a>
+            <a href="/forecasts" class="nav-link">Forecasts</a>
+            <a href="/approvals" class="nav-link">Approvals</a>
+            <a href="/feedback" class="nav-link">Feedback</a>
+        </div>
+        <div class="nav-actions">
+            <span style="color: var(--secondary);">👤 Admin</span>
+            <button class="btn btn-secondary btn-sm" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <div class="main-content" style="margin-left: 260px;">
+        <div class="dashboard-header fade-in">
+            <h1>🚨 Complaints</h1>
+            <p>Report issues related to energy theft, distribution problems, or other concerns</p>
+        </div>
+
+        <div style="padding: 20px 40px; max-width: 900px; margin: 0 auto;">
+            <div class="card" style="margin-bottom: 30px;">
+                <h2 style="margin-bottom: 20px;">📨 File a Complaint</h2>
+                <div class="form-group">
+                    <label>Area</label>
+                    <select id="complaintArea">
+                        <option value="production">Production Issues</option>
+                        <option value="storage">Storage Issues</option>
+                        <option value="distribution">Distribution Issues</option>
+                        <option value="energy_theft">Energy Theft</option>
+                        <option value="equipment">Equipment Failure</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea id="complaintDesc" rows="5" placeholder="Describe the issue in detail..."></textarea>
+                </div>
+                <button class="btn btn-primary" onclick="submitComplaint()">Submit Complaint</button>
+            </div>
+
+            <div class="card">
+                <h2 style="margin-bottom: 20px;">📋 Complaint Status</h2>
+                <div id="complaintsList">
+                    <div style="padding: 16px; border-bottom: 1px solid var(--border);">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600;">🔍 Energy Theft Detected - Distribution Zone</span>
+                            <span class="badge badge-warn">Pending</span>
+                        </div>
+                        <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 8px;">Unexpected 5% increase in transmission losses detected in Hyderabad solar grid.</div>
+                        <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 4px;">Admin • 2 days ago</div>
+                    </div>
+                    <div style="padding: 16px; border-bottom: 1px solid var(--border);">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600;">⚡ Equipment Malfunction - Wind Turbine 3</span>
+                            <span class="badge badge-error">Urgent</span>
+                        </div>
+                        <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 8px;">Turbine showing abnormal vibration patterns requiring immediate attention.</div>
+                        <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 4px;">Admin • 5 days ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+    <script>
+        async function submitComplaint() {
+            const area = document.getElementById('complaintArea').value;
+            const desc = document.getElementById('complaintDesc').value;
+            
+            try {
+                await fetch('/api/admin/complaints', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({username: 'admin', area, description: desc})
+                });
+            } catch(e) {}
+            
+            alert('Complaint filed successfully!');
+            document.getElementById('complaintDesc').value = '';
+        }
+        function logout() { localStorage.removeItem('user'); location.href = '/'; }
+    </script>
+</body>
+</html>

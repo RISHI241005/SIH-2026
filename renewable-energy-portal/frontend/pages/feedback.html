@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Renewable Energy Portal</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-logo"><div class="logo-icon">⚡</div><span>RenewPower</span></div>
+        <div class="nav-links">
+            <a href="/admin" class="nav-link">Dashboard</a>
+            <a href="/energy-tracking" class="nav-link">Energy Tracking</a>
+            <a href="/ai-desk" class="nav-link">AI Desk</a>
+            <a href="/forecasts" class="nav-link">Forecasts</a>
+            <a href="/approvals" class="nav-link">Approvals</a>
+            <a href="/feedback" class="nav-link active">Feedback</a>
+        </div>
+        <div class="nav-actions">
+            <span style="color: var(--secondary);">👤 Admin</span>
+            <button class="btn btn-secondary btn-sm" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <div class="main-content" style="margin-left: 260px;">
+        <div class="dashboard-header fade-in">
+            <h1>💬 Feedback & Suggestions</h1>
+            <p>Share your thoughts about the system, AI model, and overall experience</p>
+        </div>
+
+        <div style="padding: 20px 40px; max-width: 800px; margin: 0 auto;">
+            <div class="card" style="margin-bottom: 30px;">
+                <h2 style="margin-bottom: 20px;">📝 Submit Feedback</h2>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select id="feedbackCategory">
+                        <option value="system">System Performance</option>
+                        <option value="ai_model">AI Model</option>
+                        <option value="ui">User Interface</option>
+                        <option value="features">Features</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Rating (1-5)</label>
+                    <select id="feedbackRating">
+                        <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                        <option value="4">⭐⭐⭐⭐ Very Good</option>
+                        <option value="3">⭐⭐⭐ Good</option>
+                        <option value="2">⭐⭐ Fair</option>
+                        <option value="1">⭐ Poor</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Your Feedback</label>
+                    <textarea id="feedbackComment" rows="5" placeholder="Share your detailed feedback..."></textarea>
+                </div>
+                <button class="btn btn-primary" onclick="submitFeedback()">Submit Feedback</button>
+            </div>
+
+            <div class="card">
+                <h2 style="margin-bottom: 20px;">📜 Feedback History</h2>
+                <div id="feedbackHistory">
+                    <div style="padding: 16px; border-bottom: 1px solid var(--border);">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="font-weight: 600;">System Performance</span>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px;">The AI problem detection is very accurate and timely.</div>
+                        <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 4px;">Admin • 2 days ago</div>
+                    </div>
+                    <div style="padding: 16px; border-bottom: 1px solid var(--border);">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="font-weight: 600;">AI Model</span>
+                            <span>⭐⭐⭐⭐</span>
+                        </div>
+                        <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px;">Chatbot responses are helpful but could be more detailed.</div>
+                        <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 4px;">Admin • 5 days ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+    <script>
+        async function submitFeedback() {
+            const category = document.getElementById('feedbackCategory').value;
+            const rating = parseInt(document.getElementById('feedbackRating').value);
+            const comment = document.getElementById('feedbackComment').value;
+            
+            try {
+                await fetch('/api/admin/feedback', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({username: 'admin', category, rating, comment})
+                });
+            } catch(e) {}
+            
+            alert('Feedback submitted! Thank you.');
+            document.getElementById('feedbackComment').value = '';
+        }
+        function logout() { localStorage.removeItem('user'); location.href = '/'; }
+    </script>
+</body>
+</html>

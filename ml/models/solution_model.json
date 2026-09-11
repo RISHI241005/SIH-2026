@@ -1,0 +1,137 @@
+{
+ "solutions": {
+  "0": "No action \u2014 continue routine monitoring.",
+  "1": "Schedule preventive maintenance within 7 days (oiling/greasing, alignment, cleaning).",
+  "2": "Emergency overhaul: stop unit, replace bearings / deep-clean + PID test.",
+  "3": "Rebalance battery: revise charge setpoint, cell balancing + thermal check.",
+  "4": "Replace battery strings; top up emergency reserve to 15%.",
+  "5": "Raise transmission to HV 132-220kV, inspect joints, patrol feeder.",
+  "6": "Theft protocol: SCADA-vs-meter audit, night patrol, file complaint with distributor.",
+  "7": "Weather protection: feather turbines / tilt-drain panels / controlled dam release.",
+  "8": "Demand uploader explanation; freeze settlement until data reconciled.",
+  "9": "Trim generation setpoint 5%; shift surplus to emergency reserve."
+ },
+ "table": {
+  "0": {
+   "class": "ok",
+   "top": [
+    {
+     "solution_id": 0,
+     "text": "No action \u2014 continue routine monitoring.",
+     "prob": 0.665
+    },
+    {
+     "solution_id": 9,
+     "text": "Trim generation setpoint 5%; shift surplus to emergency reserve.",
+     "prob": 0.289
+    },
+    {
+     "solution_id": 7,
+     "text": "Weather protection: feather turbines / tilt-drain panels / controlled dam release.",
+     "prob": 0.008
+    }
+   ]
+  },
+  "1": {
+   "class": "maintenance",
+   "top": [
+    {
+     "solution_id": 2,
+     "text": "Emergency overhaul: stop unit, replace bearings / deep-clean + PID test.",
+     "prob": 0.808
+    },
+    {
+     "solution_id": 1,
+     "text": "Schedule preventive maintenance within 7 days (oiling/greasing, alignment, cleaning).",
+     "prob": 0.14
+    },
+    {
+     "solution_id": 5,
+     "text": "Raise transmission to HV 132-220kV, inspect joints, patrol feeder.",
+     "prob": 0.015
+    }
+   ]
+  },
+  "2": {
+   "class": "battery",
+   "top": [
+    {
+     "solution_id": 4,
+     "text": "Replace battery strings; top up emergency reserve to 15%.",
+     "prob": 0.709
+    },
+    {
+     "solution_id": 3,
+     "text": "Rebalance battery: revise charge setpoint, cell balancing + thermal check.",
+     "prob": 0.252
+    },
+    {
+     "solution_id": 7,
+     "text": "Weather protection: feather turbines / tilt-drain panels / controlled dam release.",
+     "prob": 0.009
+    }
+   ]
+  },
+  "3": {
+   "class": "distribution_theft",
+   "top": [
+    {
+     "solution_id": 5,
+     "text": "Raise transmission to HV 132-220kV, inspect joints, patrol feeder.",
+     "prob": 0.803
+    },
+    {
+     "solution_id": 6,
+     "text": "Theft protocol: SCADA-vs-meter audit, night patrol, file complaint with distributor.",
+     "prob": 0.106
+    },
+    {
+     "solution_id": 1,
+     "text": "Schedule preventive maintenance within 7 days (oiling/greasing, alignment, cleaning).",
+     "prob": 0.028
+    }
+   ]
+  },
+  "4": {
+   "class": "weather_risk",
+   "top": [
+    {
+     "solution_id": 7,
+     "text": "Weather protection: feather turbines / tilt-drain panels / controlled dam release.",
+     "prob": 0.923
+    },
+    {
+     "solution_id": 4,
+     "text": "Replace battery strings; top up emergency reserve to 15%.",
+     "prob": 0.022
+    },
+    {
+     "solution_id": 1,
+     "text": "Schedule preventive maintenance within 7 days (oiling/greasing, alignment, cleaning).",
+     "prob": 0.017
+    }
+   ]
+  },
+  "5": {
+   "class": "data_fault",
+   "top": [
+    {
+     "solution_id": 8,
+     "text": "Demand uploader explanation; freeze settlement until data reconciled.",
+     "prob": 0.765
+    },
+    {
+     "solution_id": 9,
+     "text": "Trim generation setpoint 5%; shift surplus to emergency reserve.",
+     "prob": 0.118
+    },
+    {
+     "solution_id": 6,
+     "text": "Theft protocol: SCADA-vs-meter audit, night patrol, file complaint with distributor.",
+     "prob": 0.022
+    }
+   ]
+  }
+ },
+ "n_rows": 1200
+}

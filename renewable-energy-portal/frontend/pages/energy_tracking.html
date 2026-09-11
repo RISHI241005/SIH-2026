@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Tracking - Renewable Energy Portal</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-logo"><div class="logo-icon">⚡</div><span>RenewPower</span></div>
+        <div class="nav-links">
+            <a href="/admin" class="nav-link">Dashboard</a>
+            <a href="/energy-tracking" class="nav-link active">Energy Tracking</a>
+            <a href="/ai-desk" class="nav-link">AI Desk</a>
+            <a href="/forecasts" class="nav-link">Forecasts</a>
+            <a href="/approvals" class="nav-link">Approvals</a>
+            <a href="/feedback" class="nav-link">Feedback</a>
+        </div>
+        <div class="nav-actions">
+            <span style="color: var(--secondary);">👤 Admin</span>
+            <button class="btn btn-secondary btn-sm" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <div class="main-content" style="margin-left: 260px;">
+        <div class="dashboard-header fade-in">
+            <h1>🔍 Energy Tracking</h1>
+            <p>Monitor the complete flow: Forecast → Production → Storage → Distribution</p>
+        </div>
+
+        <div style="padding: 0 40px 20px;">
+            <div class="flow-container">
+                <div class="flow-step active" onclick="selectFlow(this, 'forecast')">
+                    <div class="step-icon">🌤️</div>
+                    <div class="step-title">Forecast</div>
+                    <div class="step-desc">Weather predictions</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step" onclick="selectFlow(this, 'production')">
+                    <div class="step-icon">⚡</div>
+                    <div class="step-title">Production</div>
+                    <div class="step-desc">Energy generation</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step" onclick="selectFlow(this, 'storage')">
+                    <div class="step-icon">🔋</div>
+                    <div class="step-title">Storage</div>
+                    <div class="step-desc">Battery status</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step" onclick="selectFlow(this, 'distribution')">
+                    <div class="step-icon">📤</div>
+                    <div class="step-title">Distribution</div>
+                    <div class="step-desc">Energy delivery</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding: 0 40px 20px;">
+            <div style="display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap;">
+                <button class="btn btn-secondary btn-sm zone-btn active" onclick="selectZone(this, 'solar')">☀️ Solar</button>
+                <button class="btn btn-secondary btn-sm zone-btn" onclick="selectZone(this, 'wind')">💨 Wind</button>
+                <button class="btn btn-secondary btn-sm zone-btn" onclick="selectZone(this, 'hydro')">💧 Hydro</button>
+            </div>
+        </div>
+
+        <div id="flowContent" style="padding: 0 40px;">
+            <div class="cards-grid" id="flowData">
+                <div class="card">
+                    <div class="card-header"><div class="card-icon solar">☀️</div><div class="card-title">Solar Production</div></div>
+                    <div class="card-value">12KW</div>
+                    <div class="card-label">Health Score</div>
+                    <div class="card-bar"><div class="card-bar-fill solar" style="width: 85%"></div></div>
+                    <div style="margin-top: 8px; font-size: 0.9rem;"><span class="badge badge-ok">✓ Normal</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-header"><div class="card-icon wind">💨</div><div class="card-title">Wind Production</div></div>
+                    <div class="card-value">12KW</div>
+                    <div class="card-label">Health Score</div>
+                    <div class="card-bar"><div class="card-bar-fill wind" style="width: 78%"></div></div>
+                    <div style="margin-top: 8px; font-size: 0.9rem;"><span class="badge badge-warn">⚠ Monitor</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-header"><div class="card-icon hydro">💧</div><div class="card-title">Hydro Storage</div></div>
+                    <div class="card-value">25KW</div>
+                    <div class="card-label">Health Score</div>
+                    <div class="card-bar"><div class="card-bar-fill hydro" style="width: 92%"></div></div>
+                    <div style="margin-top: 8px; font-size: 0.9rem;"><span class="badge badge-ok">✓ Normal</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding: 0 40px 30px; margin-top: 20px;">
+            <h2 style="margin-bottom: 16px;">📊 Overall Statistics</h2>
+            <div class="stats-bar">
+                <div class="stat-item"><div class="stat-value">30KW</div><div class="stat-label">Total Production</div></div>
+                <div class="stat-item"><div class="stat-value">25KW</div><div class="stat-label">Total Stored</div></div>
+                <div class="stat-item"><div class="stat-value">23KW</div><div class="stat-label">Distributed</div></div>
+                <div class="stat-item"><div class="stat-value">92%</div><div class="stat-label">Efficiency</div></div>
+                <div class="stat-item"><div class="stat-value">5KW</div><div class="stat-label">Emergency Reserve</div></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+    <script>
+        function selectFlow(el, stage) {
+            document.querySelectorAll('.flow-step').forEach(f => f.classList.remove('active'));
+            el.classList.add('active');
+            document.getElementById('flowData').innerHTML = `<div class="card"><div class="card-title">${stage.charAt(0).toUpperCase() + stage.slice(1)} Stage Details</div><p style="color: var(--text-secondary); margin-top: 10px;">Loading ${stage} data...</p></div>`;
+        }
+        
+        function selectZone(el, zone) {
+            document.querySelectorAll('.zone-btn').forEach(b => b.classList.remove('active'));
+            el.classList.add('active');
+        }
+        
+        function logout() { localStorage.removeItem('user'); location.href = '/'; }
+    </script>
+</body>
+</html>

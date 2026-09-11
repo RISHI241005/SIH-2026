@@ -1,0 +1,96 @@
+{
+ "techs": {
+  "production": [
+   "Wind-DirectDrive 4MW",
+   "Wind-Geared 2MW",
+   "Solar-TOPCon 580W",
+   "Solar-PERC 450W",
+   "Hydro-Kaplan",
+   "Hydro-Francis"
+  ],
+  "storage": [
+   "Li-ion LFP",
+   "Li-ion NMC",
+   "Solid-State pilot",
+   "Lead-Acid",
+   "Flow-Vanadium"
+  ],
+  "distribution": [
+   "HV-132kV line",
+   "HV-220kV line",
+   "HVDC link",
+   "LV-11kV line"
+  ]
+ },
+ "n_rows": 930,
+ "dataset": "ml/dataset_simulator.csv",
+ "regressions": {
+  "production": {
+   "techs": [
+    "Hydro-Francis",
+    "Hydro-Kaplan",
+    "Solar-PERC 450W",
+    "Solar-TOPCon 580W",
+    "Wind-DirectDrive 4MW",
+    "Wind-Geared 2MW"
+   ],
+   "coef": [
+    0.0002,
+    -0.0264,
+    -0.0032,
+    -0.0035,
+    -2.9274,
+    1.9484,
+    -4.9553,
+    3.1115,
+    4.627,
+    -1.8041
+   ],
+   "intercept": 88.0766,
+   "r2": 0.8305
+  },
+  "storage": {
+   "techs": [
+    "Flow-Vanadium",
+    "Lead-Acid",
+    "Li-ion LFP",
+    "Li-ion NMC",
+    "Solid-State pilot"
+   ],
+   "coef": [
+    -0.0012,
+    -0.0045,
+    -0.009,
+    -0.0057,
+    -7.6239,
+    -11.2668,
+    6.0472,
+    3.717,
+    9.1265
+   ],
+   "intercept": 85.9725,
+   "r2": 0.9633
+  },
+  "distribution": {
+   "techs": [
+    "HV-132kV line",
+    "HV-220kV line",
+    "HVDC link",
+    "LV-11kV line"
+   ],
+   "coef": [
+    0.0002,
+    0.0075,
+    -0.0148,
+    -0.0005,
+    1.4676,
+    3.2404,
+    4.2378,
+    -8.9458
+   ],
+   "intercept": 92.3997,
+   "r2": 0.9361
+  }
+ },
+ "engine": "sklearn-LinearRegression"
+}

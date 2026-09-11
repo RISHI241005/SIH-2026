@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading - Renewable Energy Portal</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loading-logo">⚡ RenewPower</div>
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Initializing Renewable Energy Portal...</div>
+        <div class="loading-bar"><div class="loading-bar-fill"></div></div>
+        <p style="margin-top: 20px; color: var(--text-secondary); font-size: 0.8rem;">Loading AI models • Database • Weather Services</p>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                location.href = '/';
+            }, 2500);
+        });
+    </script>
+</body>
+</html>

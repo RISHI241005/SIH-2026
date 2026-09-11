@@ -1,0 +1,11 @@
+# UrjaSetu — free Render Blueprint (web service, free plan)
+services:
+  - type: web
+    name: urjasetu
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_VERSION
+        value: 24.19.0

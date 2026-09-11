@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UrjaSetu · Renewable Energy Manager (Solar · Wind · Hydro)</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="bg"></div>
+
+<!-- LOADING SCENE -->
+<div id="loader" class="loader hidden">
+  <div class="load-box">
+    <div class="load-logo">◉</div>
+    <h3>UrjaSetu</h3>
+    <div class="load-bar"><i></i></div>
+    <p id="loadTitle">Loading…</p>
+    <p id="loadTip" class="mut"></p>
+  </div>
+</div>
+
+<!-- ============ HOME ============ -->
+<section id="homeView">
+  <header class="topbar home">
+    <div class="brand"><span class="logo">◉</span><div><h1>UrjaSetu</h1><p>Solar · Wind · Hydro — Generate + Manage Efficiently</p></div></div>
+    <button class="icon-btn" onclick="toggleTheme()" title="Dark / light mode">🌙</button>
+    <button class="cta sm" onclick="showLogin()">Login →</button>
+  </header>
+  <div class="hero-center wrap">
+    <span class="pill ok">● Clean power, managed smartly</span>
+    <div class="sun-logo"><div class="sun-rays"></div><div class="sun-core">☀</div></div>
+    <h2 class="big"><span id="typeHead"></span><span class="cursor">|</span></h2>
+    <p class="tagline">Solar, wind and hydro — made and managed from one simple dashboard, with AI watching every step.</p>
+    <div class="row">
+      <button class="cta" onclick="showLogin()">Open portal →</button>
+      <button class="btn o" onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})">How it works</button>
+    </div>
+    <div class="stat-big">
+      <div class="stat"><b id="stUsers">…</b><span>⚡ registered users</span></div>
+      <div class="stat"><b id="stProd">…</b><span>🔋 total production (kW)</span></div>
+      <div class="stat"><b id="stDist">…</b><span>🔌 total distribution (kW)</span></div>
+    </div>
+    <div class="chips"><span>☀ Solar</span><span>🌬 Wind</span><span>🌊 Hydro</span><span>🤖 AI watched</span></div>
+  </div>
+  <div class="wrap grid g3" id="how">
+    <div class="card step"><div class="step-n">1</div><h3>Upload daily</h3><p class="mut">3 uploaders send each day's numbers before 6 PM.</p></div>
+    <div class="card step"><div class="step-n">2</div><h3>AI watches</h3><p class="mut">Issues flagged in plain words.</p></div>
+    <div class="card step"><div class="step-n">3</div><h3>You decide</h3><p class="mut">Approve, reject, or write your own fix.</p></div>
+  </div>
+  <div class="wrap">
+    <div class="card tipcard tip-wide" id="tipCard">
+      <div class="tip-bg" id="tipBg"></div>
+      <div class="tip-fg">
+        <h3>💡 Did you know <span class="mut" id="tipN"></span></h3>
+        <p id="tipBox" class="tip"></p>
+        <div class="row"><button class="btn o sm" onclick="prevTip()">‹</button><button class="btn o sm" onclick="nextTip()">›</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KNOWLEDGE -->
+  <div class="wrap grid g2">
+    <div class="card mini"><h3>🌱 What is it?</h3><p class="mut">Power from sources nature refills — sun, wind, water. No fuel bills, no smoke.</p></div>
+    <div class="card mini"><h3>❓ Why need it?</h3><p class="mut">Fuel costs rise, cuts hurt. Your own clean power means control.</p></div>
+    <div class="card mini"><h3>🔮 Future</h3><p class="mut">More EVs and ACs need more power — plus bigger batteries, smarter grids.</p></div>
+    <div class="card mini"><h3>⚙️ How here?</h3><p class="mut">Forecast → Produce → Store → Share. Upload daily, AI flags, you decide.</p></div>
+    <div class="card mini"><h3>🚀 Potential</h3><p class="mut">India's sun, wind and rivers can power crores of homes.</p></div>
+    <div class="card mini"><h3>🏆 Feats</h3><p class="mut">Bhadla solar, 45 GW+ wind, giant dams — 40%+ of India's capacity.</p></div>
+  </div>
+
+  <div class="wrap card"><h3>🤯 Unknown facts</h3>
+    <p class="mut">① An hour of sunlight ≈ a year of human energy use. ② Windmills recycle ~90% of parts. ③ Dust steals ~6% of solar — washing pays. ④ Hydro turbines run ~90% efficient. ⑤ Batteries live longest between 20–90% charge.</p></div>
+
+  <div class="wrap card"><h3>💬 Questions? Tap ▼</h3><div id="faqBox"></div></div>
+
+  <footer class="wrap contact-card">
+    <div class="contact-bg"></div>
+    <div class="contact-fg">
+      <h3>📞 Contact us</h3>
+      <p>📧 Email: <b>team@urjasetu.in</b></p>
+      <p>📱 Phone: <b>+91 98765 43210</b></p>
+      <p>💻 GitHub: <b>github.com/urjasetu</b></p>
+      <p>🔗 LinkedIn: <b>linkedin.com/company/urjasetu</b></p>
+    </div>
+  </footer>
+</section>
+
+<!-- ============ LOGIN ============ -->
+<section id="authView" class="hidden">
+  <div class="auth-card">
+    <button class="btn o sm back" onclick="showHome()">← Home</button>
+    <div class="brand"><span class="logo">◉</span><div><h1>UrjaSetu login</h1></div></div>
+    <label class="lbl">1 · Select scale</label>
+    <div class="seg" id="scaleSeg">
+      <button data-s="small" class="on" onclick="setScale('small')">🏠 Small Scale</button>
+      <button data-s="large" onclick="setScale('large')">🏭 Large Scale</button>
+    </div>
+    <label class="lbl">2 · Select role</label>
+    <select id="roleSel">
+      <option value="admin">Admin</option>
+      <option value="production_uploader">Production Data Uploader</option>
+      <option value="storage_uploader">Storage Data Uploader</option>
+      <option value="transmission_uploader">Transmission Data Uploader</option>
+    </select>
+    <div class="tabs"><button id="tabLogin" class="on">Login</button><button id="tabReg">Create account</button></div>
+    <div id="loginBox">
+      <input id="liEmail" value="admin@renew.io" placeholder="Email">
+      <div class="pass-wrap"><input id="liPass" type="password" value="admin123" placeholder="Password"><button type="button" class="eye" onclick="togglePass('liPass',this)" title="Show / hide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+      <button class="cta" onclick="doLogin()">Login →</button>
+    </div>
+    <div id="regBox" class="hidden">
+      <input id="rgName" placeholder="Full name / org e.g. Adamas University"><input id="rgEmail" placeholder="Email">
+      <div class="pass-wrap"><input id="rgPass" type="password" placeholder="Password"><button type="button" class="eye" onclick="togglePass('rgPass',this)" title="Show / hide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+      <button class="cta" onclick="doRegister()">Create account →</button>
+    </div>
+    <p id="authErr" class="err"></p>
+  </div>
+</section>
+
+<!-- ============ APP ============ -->
+<section id="appView" class="hidden">
+  <header class="topbar">
+    <div class="brand sm"><span class="logo">◉</span><div><h1>UrjaSetu</h1><p id="roleBadge">—</p></div></div>
+    <nav id="nav"></nav>
+    <div class="u"><span id="userName"></span><button class="icon-btn" onclick="toggleTheme()" title="Dark / light mode">🌙</button><button onclick="logout()">Logout</button></div>
+  </header>
+  <main id="page" class="page wrap"></main>
+</section>
+
+<div id="modal" class="modal hidden"><div class="mbox"><button class="x" onclick="closeModal()">✕</button><div id="modalBody"></div></div></div>
+<script src="app.js"></script>
+</body>
+</html>

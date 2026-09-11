@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecasts - Renewable Energy Portal</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-logo"><div class="logo-icon">⚡</div><span>RenewPower</span></div>
+        <div class="nav-links">
+            <a href="/admin" class="nav-link">Dashboard</a>
+            <a href="/energy-tracking" class="nav-link">Energy Tracking</a>
+            <a href="/ai-desk" class="nav-link">AI Desk</a>
+            <a href="/forecasts" class="nav-link active">Forecasts</a>
+            <a href="/approvals" class="nav-link">Approvals</a>
+            <a href="/feedback" class="nav-link">Feedback</a>
+        </div>
+        <div class="nav-actions">
+            <span style="color: var(--secondary);">👤 Admin</span>
+            <button class="btn btn-secondary btn-sm" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <div class="main-content" style="margin-left: 260px;">
+        <div class="dashboard-header fade-in">
+            <h1>🌤️ Weather Forecasts & AI Predictions</h1>
+            <p>Real-time weather data and AI-powered energy impact analysis for all zones</p>
+        </div>
+
+        <div style="padding: 0 40px 20px;">
+            <div style="display: flex; gap: 8px; margin-bottom: 20px;">
+                <button class="btn btn-secondary btn-sm city-btn active" onclick="selectCity(this, 'Kolkata')">🏙️ Kolkata</button>
+                <button class="btn btn-secondary btn-sm city-btn" onclick="selectCity(this, 'Delhi')">🏙️ Delhi</button>
+                <button class="btn btn-secondary btn-sm city-btn" onclick="selectCity(this, 'Mumbai')">🏙️ Mumbai</button>
+                <button class="btn btn-secondary btn-sm city-btn" onclick="selectCity(this, 'Hyderabad')">🏙️ Hyderabad</button>
+            </div>
+        </div>
+
+        <div class="weather-grid" id="weatherGrid">
+            <div class="weather-card">
+                <div class="city-name">☀️ Kolkata</div>
+                <div class="temp">32.5°C</div>
+                <div style="color: var(--text-secondary); margin-bottom: 12px;">Partly Cloudy</div>
+                <div class="weather-detail"><span>💧 Humidity: 78%</span><span>💨 Wind: 12.3m/s</span></div>
+                <div class="weather-detail"><span>☀️ Solar: 650 W/m²</span><span>🌧️ Rain: 0mm</span></div>
+            </div>
+            <div class="weather-card">
+                <div class="city-name">☀️ Delhi</div>
+                <div class="temp">38.2°C</div>
+                <div style="color: var(--text-secondary); margin-bottom: 12px;">Sunny</div>
+                <div class="weather-detail"><span>💧 Humidity: 45%</span><span>💨 Wind: 8.7m/s</span></div>
+                <div class="weather-detail"><span>☀️ Solar: 850 W/m²</span><span>🌧️ Rain: 0mm</span></div>
+            </div>
+            <div class="weather-card">
+                <div class="city-name">🌧️ Mumbai</div>
+                <div class="temp">30.1°C</div>
+                <div style="color: var(--text-secondary); margin-bottom: 12px;">Light Rain</div>
+                <div class="weather-detail"><span>💧 Humidity: 85%</span><span>💨 Wind: 15.6m/s</span></div>
+                <div class="weather-detail"><span>☀️ Solar: 520 W/m²</span><span>🌧️ Rain: 2.1mm</span></div>
+            </div>
+            <div class="weather-card">
+                <div class="city-name">☀️ Hyderabad</div>
+                <div class="temp">35.8°C</div>
+                <div style="color: var(--text-secondary); margin-bottom: 12px;">Clear Sky</div>
+                <div class="weather-detail"><span>💧 Humidity: 55%</span><span>💨 Wind: 10.2m/s</span></div>
+                <div class="weather-detail"><span>☀️ Solar: 780 W/m²</span><span>🌧️ Rain: 0mm</span></div>
+            </div>
+        </div>
+
+        <div style="padding: 0 40px 30px;">
+            <h2 style="margin-bottom: 20px;">📈 5-Day Forecast & Energy Implications</h2>
+            <div class="cards-grid" id="forecastCards">
+                <div class="card">
+                    <div class="card-title">☀️ Kolkata</div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 8px;">Day 1: 32°C, Partly Cloudy → Good solar output</div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px;">Day 2: 31°C, Light clouds → Normal output</div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px;">Day 3: 30°C, Rain expected → Reduced solar</div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px;">Day 4: 29°C, Overcast → Low output</div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px;">Day 5: 31°C, Sunny → High output</div>
+                    <span class="badge badge-warn" style="margin-top: 10px;">⚠ Day 3-4: Solar reduction expected</span>
+                </div>
+                <div class="card">
+                    <div class="card-title">💨 Delhi</div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 8px;">Day 1: 38°C, Sunny → Excellent wind potential</div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px;">Day 2: 37°C, Hot → High wind speeds predicted</div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px;">Day 3: 36°C, Clear → Optimal conditions</div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px;">Day 4: 35°C, Windy → Maximum output</div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px;">Day 5: 37°C, Hot → Stable generation</div>
+                    <span class="badge badge-ok" style="margin-top: 10px;">✓ Excellent wind forecast</span>
+                </div>
+                <div class="card">
+                    <div class="card-title">💧 Mumbai</div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 8px;">Day 1: 30°C, Rain → Hydro boost expected</div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px;">Day 2: 29°C, Heavy rain → Hydro optimal</div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px;">Day 3: 30°C, Cloudy → Solar reduced</div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px;">Day 4: 29°C, Thunderstorms → Alert</div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px;">Day 5: 30°C, Clearing → Normal</div>
+                    <span class="badge badge-warn" style="margin-top: 10px;">⚠ Monsoon conditions</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+    <script>
+        function selectCity(el, city) {
+            document.querySelectorAll('.city-btn').forEach(b => b.classList.remove('active'));
+            el.classList.add('active');
+        }
+        function logout() { localStorage.removeItem('user'); location.href = '/'; }
+    </script>
+</body>
+</html>

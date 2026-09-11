@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renewable Energy Portal</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="nav-bar">
+            <div class="nav-logo"><div class="logo-icon">⚡</div><span>RenewPower</span></div>
+            <div class="nav-links">
+                <a href="/" class="nav-link active">Home</a>
+                <a href="/energy-tracking" class="nav-link">Energy Tracking</a>
+                <a href="/ai-desk" class="nav-link">AI Desk</a>
+                <a href="/forecasts" class="nav-link">Forecasts</a>
+                <a href="/approvals" class="nav-link">Approvals</a>
+                <a href="/feedback" class="nav-link">Feedback</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-primary" onclick="location.href='/login'">Login</button>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <h1 class="hero-title">Powering Tomorrow with Renewable Energy</h1>
+            <p class="hero-subtitle">Intelligent platform for managing Solar, Wind, and Hydro energy systems. AI-powered problem detection, real-time monitoring, and smart energy distribution.</p>
+            <div class="carousel-container">
+                <div class="carousel" id="heroCarousel">
+                    <div class="carousel-slide"><h3>☀️ Solar Energy</h3><p>Harness the power of the sun with advanced solar panel monitoring and optimization systems.</p></div>
+                    <div class="carousel-slide"><h3>💨 Wind Energy</h3><p>Optimize wind turbine performance with AI-powered vibration analysis and predictive maintenance.</p></div>
+                    <div class="carousel-slide"><h3>💧 Hydro Energy</h3><p>Manage hydroelectric systems with water flow optimization and turbine health tracking.</p></div>
+                    <div class="carousel-slide"><h3>🔋 Smart Storage</h3><p>Emergency energy storage for future usage with smart battery management and theft detection.</p></div>
+                </div>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-item"><div class="stat-value">30KW</div><div class="stat-label">Daily Production</div></div>
+            <div class="stat-item"><div class="stat-value">25KW</div><div class="stat-label">Energy Stored</div></div>
+            <div class="stat-item"><div class="stat-value">23KW</div><div class="stat-label">Distributed</div></div>
+            <div class="stat-item"><div class="stat-value">92%</div><div class="stat-label">System Health</div></div>
+            <div class="stat-item"><div class="stat-value">3</div><div class="stat-label">Active Issues</div></div>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card"><div class="card-header"><div class="card-icon solar">☀️</div><div class="card-title">Solar Energy</div></div><div class="card-value">12KW</div><div class="card-label">Produced Today</div><div class="card-bar"><div class="card-bar-fill solar" style="width: 80%"></div></div></div>
+            <div class="card"><div class="card-header"><div class="card-icon wind">💨</div><div class="card-title">Wind Energy</div></div><div class="card-value">12KW</div><div class="card-label">Produced Today</div><div class="card-bar"><div class="card-bar-fill wind" style="width: 75%"></div></div></div>
+            <div class="card"><div class="card-header"><div class="card-icon hydro">💧</div><div class="card-title">Hydro Energy</div></div><div class="card-value">6KW</div><div class="card-label">Produced Today</div><div class="card-bar"><div class="card-bar-fill hydro" style="width: 60%"></div></div></div>
+        </div>
+
+        <div class="stats-bar" style="padding-bottom: 60px"><div style="text-align: center; margin: 0 auto;"><button class="btn btn-primary" style="font-size: 1.1rem; padding: 14px 40px" onclick="location.href='/login'">Get Started →</button></div></div>
+
+        <footer class="footer"><p>RenewPower © 2024 | Renewable Energy Management Portal | <a href="mailto:admin@renewable.com">admin@renewable.com</a></p></footer>
+    </div>
+    <script src="/static/js/app.js"></script>
+    <script>let slide=0;const carousel=document.getElementById('heroCarousel');const dotsContainer=document.getElementById('carouselDots');const slides=carousel.children.length;for(let i=0;i<slides;i++){const dot=document.createElement('div');dot.className='carousel-dot'+(i===0?' active':'');dot.onclick=()=>goToSlide(i);dotsContainer.appendChild(dot);}function goToSlide(n){slide=n;carousel.style.transform=`translateX(-${slide*100}%)`;document.querySelectorAll('.carousel-dot').forEach((d,i)=>d.classList.toggle('active',i===slide));}setInterval(()=>goToSlide((slide+1)%slides),4000);</script>
+</body>
+</html>

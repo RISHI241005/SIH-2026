@@ -1,0 +1,7 @@
+{
+ "problem_model_accuracy": 0.85,
+ "dataset_rows": 1200,
+ "solution_classes": 6,
+ "chat_pairs": 68,
+ "note": "Medium-size dataset (1200 rows). Retrain: python ml/generate_dataset.py && python ml/train_models.py"
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approvals - Renewable Energy Portal</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-logo"><div class="logo-icon">⚡</div><span>RenewPower</span></div>
+        <div class="nav-links">
+            <a href="/admin" class="nav-link">Dashboard</a>
+            <a href="/energy-tracking" class="nav-link">Energy Tracking</a>
+            <a href="/ai-desk" class="nav-link">AI Desk</a>
+            <a href="/forecasts" class="nav-link">Forecasts</a>
+            <a href="/approvals" class="nav-link active">Approvals</a>
+            <a href="/feedback" class="nav-link">Feedback</a>
+        </div>
+        <div class="nav-actions">
+            <span style="color: var(--secondary);">👤 Admin</span>
+            <button class="btn btn-secondary btn-sm" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <div class="main-content" style="margin-left: 260px;">
+        <div class="dashboard-header fade-in">
+            <h1>📋 Problem Approvals</h1>
+            <p>Review and approve/reject AI-detected problems and solutions</p>
+        </div>
+
+        <div style="padding: 0 40px 20px;">
+            <div style="display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap;">
+                <button class="btn btn-secondary btn-sm" onclick="filterProblems(this, 'all')">All</button>
+                <button class="btn btn-secondary btn-sm" onclick="filterProblems(this, 'solar')">☀️ Solar</button>
+                <button class="btn btn-secondary btn-sm" onclick="filterProblems(this, 'wind')">💨 Wind</button>
+                <button class="btn btn-secondary btn-sm" onclick="filterProblems(this, 'hydro')">💧 Hydro</button>
+            </div>
+        </div>
+
+        <div style="padding: 0 40px;">
+            <div id="problemsList"></div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+    <script>
+        const problems = [
+            {id: 1, source_type: 'solar', stage: 'production', title: 'Panel Degradation Detected', description: 'Solar panels showing 12% efficiency drop. Possible causes: dust accumulation, micro-cracks, or aging cells.', severity: 'high', status: 'pending', ai_solution: 'Schedule panel cleaning, inspect for micro-cracks, apply anti-reflective coating, replace degraded cells.', ai_confidence: 0.87, past_occurrences: 0},
+            {id: 2, source_type: 'wind', stage: 'production', title: 'Turbine Blade Wear', description: 'Wind turbines showing abnormal vibration patterns. Blade wear detected 5% above threshold.', severity: 'medium', status: 'pending', ai_solution: 'Schedule blade inspection, apply protective coating, adjust turbine pitch, install vibration dampeners.', ai_confidence: 0.82, past_occurrences: 2},
+            {id: 3, source_type: 'hydro', stage: 'storage', title: 'Battery Capacity Reduction', description: 'Hydro storage batteries showing 8% capacity reduction. Charge cycles may need calibration.', severity: 'medium', status: 'pending', ai_solution: 'Replace degraded battery cells, recalibrate BMS, implement proper charge cycles, monitor for 1 week.', ai_confidence: 0.91, past_occurrences: 1},
+            {id: 4, source_type: 'solar', stage: 'distribution', title: 'Transmission Loss Spike', description: 'Unexpected 5% increase in transmission losses detected.', severity: 'high', status: 'pending', ai_solution: 'Inspect transmission lines, replace damaged cables, upgrade transformers, implement smart grid routing.', ai_confidence: 0.85, past_occurrences: 0},
+            {id: 5, source_type: 'wind', stage: 'forecast', title: 'Wind Pattern Shift', description: 'AI predicts 20% wind speed reduction for next 48 hours.', severity: 'low', status: 'pending', ai_solution: 'Analyze historical patterns, adjust turbine orientation, prepare solar backup, update 48-hour forecast.', ai_confidence: 0.78, past_occurrences: 0}
+        ];
+
+        function loadProblems() {
+            const container = document.getElementById('problemsList');
+            container.innerHTML = problems.map(p => `
+                <div class="problem-card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                        <span class="problem-title">${p.title}</span>
+                        <span class="severity-badge ${p.severity}">${p.severity}</span>
+                    </div>
+                    <div class="problem-desc">${p.description}</div>
+                    <div style="display: flex; gap: 16px; margin-bottom: 12px; font-size: 0.85rem; color: var(--text-secondary);">
+                        <span>Source: <strong>${p.source_type}</strong></span>
+                        <span>Stage: <strong>${p.stage}</strong></span>
+                        <span>Past Occurrences: <strong>${p.past_occurrences}</strong></span>
+                        <span>AI Confidence: <strong>${(p.ai_confidence * 100).toFixed(0)}%</strong></span>
+                    </div>
+                    <div style="background: var(--bg-dark); padding: 12px; border-radius: 8px; margin-bottom: 12px;">
+                        <div style="font-size: 0.85rem; color: var(--primary); margin-bottom: 6px;">🤖 AI Suggested Solution:</div>
+                        <div style="font-size: 0.9rem;">${p.ai_solution}</div>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <button class="btn btn-success btn-sm" onclick="approveProblem(${p.id})">✓ Approve</button>
+                        <button class="btn btn-danger btn-sm" onclick="rejectProblem(${p.id})">✗ Reject</button>
+                        <button class="btn btn-primary btn-sm" onclick="customSolution(${p.id})">✏️ Make Solution</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function approveProblem(id) { alert(`Problem ${id} approved!`); loadProblems(); }
+        function rejectProblem(id) { alert(`Problem ${id} rejected.`); loadProblems(); }
+        function customSolution(id) {
+            const sol = prompt('Enter your custom solution for problem #' + id + ':');
+            if (sol) alert('Custom solution submitted for problem #' + id);
+        }
+        function filterProblems(el, filter) { document.querySelectorAll('.zone-btn, .btn-sm').forEach(b => {}); }
+        function logout() { localStorage.removeItem('user'); location.href = '/'; }
+        loadProblems();
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Renewable Energy Portal</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-logo"><div class="logo-icon">⚡</div><span>RenewPower</span></div>
+        <div class="nav-links">
+            <a href="/admin" class="nav-link active">Dashboard</a>
+            <a href="/energy-tracking" class="nav-link">Energy Tracking</a>
+            <a href="/ai-desk" class="nav-link">AI Desk</a>
+            <a href="/forecasts" class="nav-link">Forecasts</a>
+            <a href="/approvals" class="nav-link">Approvals</a>
+            <a href="/feedback" class="nav-link">Feedback</a>
+            <a href="/complaints" class="nav-link">Complaints</a>
+        </div>
+        <div class="nav-actions">
+            <span style="color: var(--secondary); font-weight: 600;">👤 Admin</span>
+            <button class="btn btn-secondary btn-sm" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <div class="main-content" style="margin-left: 260px;">
+        <div class="dashboard-header fade-in">
+            <h1>📊 Dashboard Overview</h1>
+            <p>Real-time statistics and system health monitoring</p>
+        </div>
+
+        <div class="dashboard-grid" id="dashboardGrid">
+            <div class="dashboard-card">
+                <h3>⚡ Total Production</h3>
+                <div class="big-value" id="totalProduced">30KW</div>
+                <div class="trend up">↑ 12% from yesterday</div>
+            </div>
+            <div class="dashboard-card">
+                <h3>🔋 Energy Stored</h3>
+                <div class="big-value" id="totalStored">25KW</div>
+                <div class="trend up">↑ 8% increase</div>
+            </div>
+            <div class="dashboard-card">
+                <h3>📤 Distributed</h3>
+                <div class="big-value" id="totalDistributed">23KW</div>
+                <div class="trend up">↑ 5% increase</div>
+            </div>
+            <div class="dashboard-card">
+                <h3>🔴 Pending Issues</h3>
+                <div class="big-value" id="pendingProblems">3</div>
+                <div class="trend down">Requires attention</div>
+            </div>
+            <div class="dashboard-card">
+                <h3>🔔 Unread Alerts</h3>
+                <div class="big-value">4</div>
+                <div class="trend down">1 critical</div>
+            </div>
+            <div class="dashboard-card">
+                <h3>📉 Emergency Reserve</h3>
+                <div class="big-value">5KW</div>
+                <div class="trend up">Healthy reserves</div>
+            </div>
+        </div>
+
+        <div style="padding: 0 40px 30px;">
+            <h2 style="margin-bottom: 20px;">⚡ Energy Breakdown by Source</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header"><div class="card-icon solar">☀️</div><div class="card-title">Solar</div></div>
+                    <div class="card-value">12KW</div>
+                    <div class="card-label">40% of total production</div>
+                    <div class="card-bar"><div class="card-bar-fill solar" style="width: 80%"></div></div>
+                </div>
+                <div class="card">
+                    <div class="card-header"><div class="card-icon wind">💨</div><div class="card-title">Wind</div></div>
+                    <div class="card-value">12KW</div>
+                    <div class="card-label">40% of total production</div>
+                    <div class="card-bar"><div class="card-bar-fill wind" style="width: 75%"></div></div>
+                </div>
+                <div class="card">
+                    <div class="card-header"><div class="card-icon hydro">💧</div><div class="card-title">Hydro</div></div>
+                    <div class="card-value">6KW</div>
+                    <div class="card-label">20% of total production</div>
+                    <div class="card-bar"><div class="card-bar-fill hydro" style="width: 60%"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding: 0 40px 30px;">
+            <h2 style="margin-bottom: 20px;">🚨 Recent Alerts</h2>
+            <div id="alertsList"></div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+    <script>
+        async function loadDashboard() {
+            try {
+                const res = await fetch('/api/dashboard/stats');
+                const data = await res.json();
+                if (data.total_produced_kw) document.getElementById('totalProduced').textContent = data.total_produced_kw + 'KW';
+                if (data.total_stored_kw) document.getElementById('totalStored').textContent = data.total_stored_kw + 'KW';
+                if (data.total_distributed_kw) document.getElementById('totalDistributed').textContent = data.total_distributed_kw + 'KW';
+                document.getElementById('pendingProblems').textContent = data.pending_problems || 0;
+            } catch(e) {}
+            
+            try {
+                const res = await fetch('/api/dashboard/alerts');
+                const alerts = await res.json();
+                const container = document.getElementById('alertsList');
+                container.innerHTML = alerts.slice(0, 5).map(a => `
+                    <div class="problem-card">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span class="problem-title">${a.title}</span>
+                            <span class="severity-badge ${a.alert_type === 'critical' ? 'critical' : a.alert_type === 'warning' ? 'high' : 'medium'}">${a.alert_type}</span>
+                        </div>
+                        <div class="problem-desc">${a.message}</div>
+                        <span class="alert-dot"></span> ${a.created_at ? a.created_at.split('T')[0] : ''}
+                    </div>
+                `).join('');
+            } catch(e) {}
+        }
+        
+        function logout() {
+            localStorage.removeItem('user');
+            location.href = '/';
+        }
+        
+        loadDashboard();
+    </script>
+</body>
+</html>
